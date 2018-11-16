@@ -1,0 +1,1927 @@
+{
+	"info": {
+		"_postman_id": "1c778b2c-9df3-4050-9a8d-af490c168c44",
+		"name": "RIS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "menu/list",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/menu/list?lang=tc&store=2001&channel=6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"menu",
+						"list"
+					],
+					"query": [
+						{
+							"key": "lang",
+							"value": "tc"
+						},
+						{
+							"key": "store",
+							"value": "2001"
+						},
+						{
+							"key": "channel",
+							"value": "6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "synchronize",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"storeNumber\": \"1890\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/synchronize",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"synchronize"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ping",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/ping",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"ping"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ping2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"localDate\": \"2018-11-12 10:56:57\",\n\t\"storeNumber\": \"1890\",\n\t\"terminalNumber\": \"1\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/ping2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"ping2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "invSyncAck",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"inventoryCheckedTime\": \"2018-09-14 15:37:02\",\n\t\"storeNumber\": \"1890\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/invSyncAck",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"invSyncAck"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rollover",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"forceRollover\": \"false\",\n\t\"includeItems\": \"true\",\n\t\"storeNumber\": \"1890\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/rollover",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"rollover"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rolloverExtension",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"needDeltaOnly\": \"false\",\n\t\"storeNumber\": \"1890\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/rolloverExtension",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"rolloverExtension"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCustomerList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"accountID\": \"01\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/getCustomerList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"getCustomerList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCustomerListWithTrans",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"accountID\": \"01\",\n\t\"membershipNum\": \"1\",\n\t\"numOfTrans\": \"1\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/getCustomerListWithTrans",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"getCustomerListWithTrans"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getEmployee",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"employeeID\": \"01\",\n\t\"storeNumber\": \"1890\",\n\t\"userID\": \"01\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/getEmployee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"getEmployee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getEmployeeList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"needDeltaOnly\": true,\n\t\"needEmployeeProfiles\": true,\n\t\"needEmployeeRoleXrefs\": true,\n\t\"needEmployeeSchedules\": true,\n\t\"needFunctionProfiles\": true,\n\t\"needRoleFunctionXrefs\": true,\n\t\"needRoleProfiles\": true,\n\t\"storeNumber\": \"1890\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/getEmployeeList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"getEmployeeList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getEmployeeAttendances",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"storeNumber\": \"1890\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/getEmployeeAttendances",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"getEmployeeAttendances"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SASKTEL_inventorySearchGet",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"SearchKey\": \"00\",\n\t\"SearchScopeNumber\": \"01\",\n\t\"StoreNumber\": \"1890\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/SASKTEL_inventorySearchGet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"SASKTEL_inventorySearchGet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getInventoryCountDetails",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"storeNumber\": \"1890\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/getInventoryCountDetails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"getInventoryCountDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "InventorySearchGet",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"SearchKey\": \"\",\n\t\"SearchScopeNumber\": \"01\",\n\t\"StoreNumber\": \"1890\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/InventorySearchGet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"InventorySearchGet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getFileTransferList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"fileSubType\": \"ProductImages\",\n\t\"fileType\": \"RIS\",\n\t\"storeNumber\": \"1890\",\n\t\"timestamp\": \"2017-11-03 15:14:57\",\n\t\"transferDirection\": \"ES_to_SS\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/getFileTransferList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"getFileTransferList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateTransTender",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"batchNumber\": \"0139500\",\n\t\"transNumber\": \"\",\n\t\"transTenderLine\": \"\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/updateTransTender",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"updateTransTender"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getRetailTransaction",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"serialNumber\": \"\",\n\t\"transNumber\": \"\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/getRetailTransaction",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"getRetailTransaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getTransactionNumbers",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"storeNumber\": \"1890\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/getTransactionNumbers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"getTransactionNumbers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getRetailTransList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"storeNumber\": \"1890\",\n\t\"transNumList\": []\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/getRetailTransList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"getRetailTransList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCreditNote",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"creditNoteNum\": \"2\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/getCreditNote",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"getCreditNote"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getMaxClientTableIDs",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"storeNumber\": \"1890\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/getMaxClientTableIDs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"getMaxClientTableIDs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getMembershipProfile",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"membershipNum\": \"01\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/getMembershipProfile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"getMembershipProfile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getItem",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"input\": \"\",\n\t\"itemID\": \"01\",\n\t\"serialNum\": \"\",\n\t\"storeNumber\": \"1890\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/getItem",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"getItem"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getWebOrderList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"lastSyncTime\": \"\",\n\t\"storeNumber\": \"1890\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/getWebOrderList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"getWebOrderList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPurchaseOrders",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"storeNumber\": \"1890\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/getPurchaseOrders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"getPurchaseOrders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "waitTimeGet",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"storeNumber\": 1890\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/waitTimeGet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"waitTimeGet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "passwordValidation",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"employeeID\": \"01\",\n\t\"password\": \"1\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/passwordValidation",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"passwordValidation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "init",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/init",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"init"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "invSyncAck",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"storeNumber\": \"1890\",\n\t\"inventoryCheckedTime\": \"2018-09-14 15:37:02\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/invSyncAck",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"invSyncAck"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetTransTenderLines",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"terminalID\": \"01\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/GetTransTenderLines",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"GetTransTenderLines"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RegisterTerminal",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"initialInst\": true,\n\t\"networkAddr\": \"\",\n\t\"storeNumber\": \"1890\",\n\t\"terminalID\": \"01\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/RegisterTerminal",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"RegisterTerminal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getTerminalSummary",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"isStoreClose\": true,\n\t\"storeNumber\": \"1890\",\n\t\"terminalID\": \"01\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/getTerminalSummary",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"getTerminalSummary"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getBusinessLicence",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"storeNumber\": \"1890\",\n\t\"licenseKey\": \"\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/getBusinessLicence",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"getBusinessLicence"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "setBusinessLicence",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"numRegTerm\": \"01\",\n\t\"storeNumber\": \"1890\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/setBusinessLicence",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"setBusinessLicence"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SASKTEL_getCustomerList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"accountID\": \"53\",\n\t\"firstName\": \"\",\n\t\"lastName\": \"\",\n\t\"membershipNum\": \"\",\n\t\"phoneNumber\": \"\",\n\t\"searchSaskTelOnly\": false,\n\t\"wireless\": false\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/SASKTEL_getCustomerList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"SASKTEL_getCustomerList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "setEmployeePassword",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"newPassword\": \"\",\n\t\"numAttempts\": \"01\",\n\t\"password\": \"\",\n\t\"updatePwd\": false,\n\t\"userID\": \"01\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/setEmployeePassword",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"setEmployeePassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getInventory",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"forUpdate\": \"\",\n\t\"lastInvUpdate\": \"\",\n\t\"storeNumber\": \"1890\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/getInventory",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"getInventory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "recNumForGivenCondition",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"condition\": \"\",\n\t\"tableName\": \"01\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/recNumForGivenCondition",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"recNumForGivenCondition"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "setMaterialPlanning",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"materialPlanning\": \r\n\t[\r\n\t\t{\r\n\t\t\t\"creationDate\": \"\",\r\n\t\t\t\"deleteDate\": \"\",\r\n\t\t\t\"itemId\": \"\",\r\n\t\t\t\"lastModifiedBy\": \"\",\r\n\t\t\t\"lastModifiedDate\": \"\",\r\n\t\t\t\"planningDate\": \"\",\r\n\t\t\t\"planningNumber\": \"\",\r\n\t\t\t\"qty\": \"\",\r\n\t\t\t\"sCreationDate\": \"\",\r\n\t\t\t\"sDeleteDate\": \"\",\r\n\t\t\t\"sLastModifiedDate\": \"\",\r\n\t\t\t\"sPlanningDate\": \"\",\r\n\t\t\t\"storeNumber\": \"\"\r\n\t\t}\r\n\t]\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/setMaterialPlanning",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"setMaterialPlanning"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "setMaterialTransformationHistory",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"materialTransformHistory\": [\r\n    {\r\n      \"costHistList\": [\r\n        {\r\n          \"cost\": \"\",\r\n          \"creationDate\": \"\",\r\n          \"deleteDate\": \"\",\r\n          \"itemId\": \"\",\r\n          \"lastModifiedBy\": \"\",\r\n          \"lastModifiedDate\": \"\",\r\n          \"lineNumber\": \"\",\r\n          \"sCreationDate\": \"\",\r\n          \"sDeleteDate\": \"\",\r\n          \"sLastModifiedDate\": \"\",\r\n          \"transformId\": \"\"\r\n        }\r\n      ],\r\n      \"creationDate\": \"\",\r\n      \"deleteDate\": \"\",\r\n      \"itemId\": \"\",\r\n      \"lastModifiedBy\": \"\",\r\n      \"lastModifiedDate\": \"\",\r\n      \"parentItemId\": \"\",\r\n      \"sCreationDate\": \"\",\r\n      \"sDeleteDate\": \"\",\r\n      \"sLastModifiedDate\": \"\",\r\n      \"storeNumber\": \"\",\r\n      \"transformId\": \"\",\r\n      \"transformedQty\": \"\"\r\n    }\r\n  ]\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/setMaterialTransformationHistory",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"setMaterialTransformationHistory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateTerminalStatus",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"terminalStatus\": {\r\n    \"LastModifiedDate\": \"\",\r\n    \"LocalDate\": \"\",\r\n    \"PaymentIP\": \"\",\r\n    \"Status\": \"\",\r\n    \"StoreIP\": \"\",\r\n    \"StoreNumber\": \"\",\r\n    \"TerminalID\": \"\",\r\n    \"TerminalIP\": \"\",\r\n    \"TerminalNumber\": \"\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/updateTerminalStatus",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"updateTerminalStatus"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "setClientTableData",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"clientBankIns\": [\r\n    {\r\n      \"ClientBankInLines\": [\r\n        {\r\n          \"amount\": \"\",\r\n          \"bankInCode\": \"\",\r\n          \"bankInDate\": \"\",\r\n          \"clientBankInId\": \"\",\r\n          \"creationDate\": \"\",\r\n          \"deleteDate\": \"\",\r\n          \"lastModifiedBy\": \"\",\r\n          \"lastModifiedDate\": \"\",\r\n          \"sBankInDate\": \"\",\r\n          \"sCreationDate\": \"\",\r\n          \"sDeleteDate\": \"\",\r\n          \"sLastModifiedDate\": \"\"\r\n        }\r\n      ],\r\n      \"businessDate\": \"\",\r\n      \"clientBankInId\": \"\",\r\n      \"creationDate\": \"\",\r\n      \"deleteDate\": \"\",\r\n      \"lastModifiedBy\": \"\",\r\n      \"lastModifiedDate\": \"\",\r\n      \"postingDatetime\": \"\",\r\n      \"sBusinessDate\": \"\",\r\n      \"sCreationDate\": \"\",\r\n      \"sDeleteDate\": \"\",\r\n      \"sLastModifiedDate\": \"\",\r\n      \"sPostingDatetime\": \"\",\r\n      \"status\": \"\",\r\n      \"storeNumber\": \"\",\r\n      \"terminalId\": \"\"\r\n    }\r\n  ],\r\n  \"clientCashTips\": [\r\n    {\r\n      \"amount\": \"\",\r\n      \"businessDate\": \"\",\r\n      \"clientCashTipsId\": \"\",\r\n      \"creationDate\": \"\",\r\n      \"deleteDate\": \"\",\r\n      \"lastModifiedBy\": \"\",\r\n      \"lastModifiedDate\": \"\",\r\n      \"postingDatetime\": \"\",\r\n      \"sBusinessDate\": \"\",\r\n      \"sCreationDate\": \"\",\r\n      \"sDeleteDate\": \"\",\r\n      \"sLastModifiedDate\": \"\",\r\n      \"sPostingDatetime\": \"\",\r\n      \"status\": \"\",\r\n      \"storeNumber\": \"\",\r\n      \"terminalId\": \"\"\r\n    }\r\n  ],\r\n  \"clientCouponDeclarations\": [\r\n    {\r\n      \"ClientCouponDeclarationLines\": [\r\n        {\r\n          \"calculated\": \"\",\r\n          \"clientCouponDeclarationId\": \"\",\r\n          \"counted\": \"\",\r\n          \"couponNum\": \"\",\r\n          \"creationDate\": \"\",\r\n          \"deleteDate\": \"\",\r\n          \"lastModifiedBy\": \"\",\r\n          \"lastModifiedDate\": \"\",\r\n          \"payCode\": \"\",\r\n          \"paymentOptionId\": \"\",\r\n          \"postingDatetime\": \"\",\r\n          \"sCreationDate\": \"\",\r\n          \"sDeleteDate\": \"\",\r\n          \"sLastModifiedDate\": \"\",\r\n          \"sPostingDatetime\": \"\"\r\n        }\r\n      ],\r\n      \"businessDate\": \"\",\r\n      \"clientCouponDeclarationId\": \"\",\r\n      \"creationDate\": \"\",\r\n      \"deleteDate\": \"\",\r\n      \"lastModifiedBy\": \"\",\r\n      \"lastModifiedDate\": \"\",\r\n      \"postingDatetime\": \"\",\r\n      \"sBusinessDate\": \"\",\r\n      \"sCreationDate\": \"\",\r\n      \"sDeleteDate\": \"\",\r\n      \"sLastModifiedDate\": \"\",\r\n      \"sPostingDatetime\": \"\",\r\n      \"status\": \"\",\r\n      \"storeNumber\": \"\",\r\n      \"terminalId\": \"\"\r\n    }\r\n  ],\r\n  \"clientShortOvers\": [\r\n    {\r\n      \"ClientShortOverLines\": [\r\n        {\r\n          \"amount\": \"\",\r\n          \"clientShortOverId\": \"\",\r\n          \"creationDate\": \"\",\r\n          \"deleteDate\": \"\",\r\n          \"lastModifiedBy\": \"\",\r\n          \"lastModifiedDate\": \"\",\r\n          \"reasonCode\": \"\",\r\n          \"sCreationDate\": \"\",\r\n          \"sDeleteDate\": \"\",\r\n          \"sLastModifiedDate\": \"\",\r\n          \"shortOver\": \"\"\r\n        }\r\n      ],\r\n      \"businessDate\": \"\",\r\n      \"clientShortOverId\": \"\",\r\n      \"creationDate\": \"\",\r\n      \"deleteDate\": \"\",\r\n      \"lastModifiedBy\": \"\",\r\n      \"lastModifiedDate\": \"\",\r\n      \"postingDatetime\": \"\",\r\n      \"sBusinessDate\": \"\",\r\n      \"sCreationDate\": \"\",\r\n      \"sDeleteDate\": \"\",\r\n      \"sLastModifiedDate\": \"\",\r\n      \"sPostingDatetime\": \"\",\r\n      \"status\": \"\",\r\n      \"storeNumber\": \"\",\r\n      \"terminalId\": \"\"\r\n    }\r\n  ],\r\n  \"clientStockTakes\": [\r\n    {\r\n      \"ClientStockTakeLines\": [\r\n        {\r\n          \"balanceBroughtForward\": \"\",\r\n          \"calculated\": \"\",\r\n          \"clientStockTakeId\": \"\",\r\n          \"creationDate\": \"\",\r\n          \"deleteDate\": \"\",\r\n          \"goodsReceive\": \"\",\r\n          \"goodsReturn\": \"\",\r\n          \"interBranchTransfer\": \"\",\r\n          \"inventoryAdjustment\": \"\",\r\n          \"itemId\": \"\",\r\n          \"lastModifiedBy\": \"\",\r\n          \"lastModifiedDate\": \"\",\r\n          \"sCreationDate\": \"\",\r\n          \"sDeleteDate\": \"\",\r\n          \"sLastModifiedDate\": \"\",\r\n          \"sales\": \"\",\r\n          \"stockCount\": \"\"\r\n        }\r\n      ],\r\n      \"businessDate\": \"\",\r\n      \"clientStockTakeId\": \"\",\r\n      \"creationDate\": \"\",\r\n      \"deleteDate\": \"\",\r\n      \"lastModifiedBy\": \"\",\r\n      \"lastModifiedDate\": \"\",\r\n      \"postingDatetime\": \"\",\r\n      \"sBusinessDate\": \"\",\r\n      \"sCreationDate\": \"\",\r\n      \"sDeleteDate\": \"\",\r\n      \"sLastModifiedDate\": \"\",\r\n      \"sPostingDatetime\": \"\",\r\n      \"status\": \"\",\r\n      \"storeNumber\": \"\",\r\n      \"terminalId\": \"\"\r\n    }\r\n  ],\r\n  \"clientStoreClosings\": [\r\n    {\r\n      \"businessDate\": \"\",\r\n      \"clientStoreClosingId\": \"\",\r\n      \"creationDate\": \"\",\r\n      \"deleteDate\": \"\",\r\n      \"lastModifiedBy\": \"\",\r\n      \"lastModifiedDate\": \"\",\r\n      \"postingDatetime\": \"\",\r\n      \"sBusinessDate\": \"\",\r\n      \"sCreationDate\": \"\",\r\n      \"sDeleteDate\": \"\",\r\n      \"sLastModifiedDate\": \"\",\r\n      \"sPostingDatetime\": \"\",\r\n      \"status\": \"\",\r\n      \"storeNumber\": \"\",\r\n      \"terminalId\": \"\"\r\n    }\r\n  ],\r\n  \"storeNumber\": \"\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/setClientTableData",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"setClientTableData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "processEvent",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"eventVO\": {\r\n    \"Amount\": \"\",\r\n    \"BusinessDate\": \"\",\r\n    \"CreationDate\": \"\",\r\n    \"DeleteDate\": \"\",\r\n    \"EventID\": \"\",\r\n    \"EventTypeID\": \"\",\r\n    \"LastModifiedBy\": \"\",\r\n    \"LastModifiedDate\": \"\",\r\n    \"PostingDateTime\": \"\",\r\n    \"ReasonCode\": \"\",\r\n    \"ShiftNumber\": \"\",\r\n    \"State\": \"\",\r\n    \"StoreNumber\": \"\",\r\n    \"TerminalID\": \"\",\r\n    \"TransNumber\": \"\",\r\n    \"UserID\": \"\",\r\n    \"Var0name\": \"\",\r\n    \"Var0value\": \"\",\r\n    \"Var1name\": \"\",\r\n    \"Var1value\": \"\",\r\n    \"Var2name\": \"\",\r\n    \"Var2value\": \"\",\r\n    \"Var3name\": \"\",\r\n    \"Var3value\": \"\",\r\n    \"Var4name\": \"\",\r\n    \"Var4value\": \"\",\r\n    \"sBusinessDate\": \"\",\r\n    \"sCreationDate\": \"\",\r\n    \"sDeleteDate\": \"\",\r\n    \"sLastModifiedDate\": \"\",\r\n    \"sPostingDateTime\": \"\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/processEvent",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"processEvent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getEventOrderList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"contactPhone\": \"\",\r\n  \"eventOrderNum\": \"\",\r\n  \"eventOrderNumList\": [],\r\n  \"lastAction\": \"\",\r\n  \"orderDateTimeFrom\": \"\",\r\n  \"orderDateTimeTo\": \"\",\r\n  \"orderingStoreNum\": \"\",\r\n  \"pickupDateTimeFrom\": \"\",\r\n  \"pickupDateTimeTo\": \"\",\r\n  \"pickupStoreNum\": \"\",\r\n  \"redeemed\": \"\",\r\n  \"refunded\": \"\",\r\n  \"returnLatest\": \"\",\r\n  \"status\": \"\",\r\n  \"storeNumber\": \"\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/getEventOrderList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"getEventOrderList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "receiveProducts",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"asnList\": [\r\n    {\r\n      \"ASNDetails\": [\r\n        {\r\n          \"backOrderStatus\": \"\",\r\n          \"creationDate\": \"\",\r\n          \"deleteDate\": \"\",\r\n          \"itemId\": \"\",\r\n          \"lastModifiedBy\": \"\",\r\n          \"lastModifiedDate\": \"\",\r\n          \"lineNumber\": \"\",\r\n          \"orderedQty\": \"\",\r\n          \"plu\": \"\",\r\n          \"price\": \"\",\r\n          \"qty\": \"\",\r\n          \"reason\": \"\",\r\n          \"receiveStatus\": \"\",\r\n          \"receivedQty\": \"\",\r\n          \"sCreationDate\": \"\",\r\n          \"sDeleteDate\": \"\",\r\n          \"sLastModifiedDate\": \"\",\r\n          \"serialNumber\": \"\",\r\n          \"shippingNoticeId\": \"\",\r\n          \"sku\": \"\"\r\n        }\r\n      ],\r\n      \"allocationNumber\": \"\",\r\n      \"courier\": \"\",\r\n      \"creationDate\": \"\",\r\n      \"deleteDate\": \"\",\r\n      \"deliveryNumber\": \"\",\r\n      \"errorMessage\": \"\",\r\n      \"flag\": \"\",\r\n      \"isFrom\": \"\",\r\n      \"lastModifiedBy\": \"\",\r\n      \"lastModifiedDate\": \"\",\r\n      \"noticeDate\": \"\",\r\n      \"poHeaderId\": \"\",\r\n      \"poNumber\": \"\",\r\n      \"recvdBy\": \"\",\r\n      \"sCreationDate\": \"\",\r\n      \"sDeleteDate\": \"\",\r\n      \"sLastModifiedDate\": \"\",\r\n      \"sNoticeDate\": \"\",\r\n      \"shippedBy\": \"\",\r\n      \"shippingNoticeId\": \"\",\r\n      \"sourceStoreNumber\": \"\",\r\n      \"specialInstr\": \"\",\r\n      \"status\": \"\",\r\n      \"storeNumber\": \"\",\r\n      \"subStatus\": \"\",\r\n      \"supplierID\": \"\",\r\n      \"wayBill\": \"\"\r\n    }\r\n  ],\r\n  \"asnReceiveRegistryList\": [\r\n    {\r\n      \"asnRecvDetails\": [\r\n        {\r\n          \"creationDate\": \"\",\r\n          \"deleteDate\": \"\",\r\n          \"itemId\": \"\",\r\n          \"lastModifiedBy\": \"\",\r\n          \"lastModifiedDate\": \"\",\r\n          \"lineNumber\": \"\",\r\n          \"outQty\": \"\",\r\n          \"plu\": \"\",\r\n          \"purchaseCost\": \"\",\r\n          \"qty\": \"\",\r\n          \"sCreationDate\": \"\",\r\n          \"sDeleteDate\": \"\",\r\n          \"sLastModifiedDate\": \"\",\r\n          \"transactionNumber\": \"\"\r\n        }\r\n      ],\r\n      \"comments\": \"\",\r\n      \"confirmationDate\": \"\",\r\n      \"confirmationNumber\": \"\",\r\n      \"creationDate\": \"\",\r\n      \"deleteDate\": \"\",\r\n      \"deliveryNumber\": \"\",\r\n      \"employeeId\": \"\",\r\n      \"errorMessage\": \"\",\r\n      \"lastModifiedBy\": \"\",\r\n      \"lastModifiedDate\": \"\",\r\n      \"poNumber\": \"\",\r\n      \"receivedDate\": \"\",\r\n      \"recvdBy\": \"\",\r\n      \"sConfirmationDate\": \"\",\r\n      \"sCreationDate\": \"\",\r\n      \"sDeleteDate\": \"\",\r\n      \"sLastModifiedDate\": \"\",\r\n      \"sReceivedDate\": \"\",\r\n      \"status\": \"\",\r\n      \"storeNumber\": \"\",\r\n      \"transactionNumber\": \"\"\r\n    }\r\n  ],\r\n  \"poHeaderList\": [\r\n    {\r\n      \"PurchaseOrderDetails\": [\r\n        {\r\n          \"cost\": \"\",\r\n          \"creationDate\": \"\",\r\n          \"deleteDate\": \"\",\r\n          \"description\": \"\",\r\n          \"lastModifiedBy\": \"\",\r\n          \"lastModifiedDate\": \"\",\r\n          \"listPrice\": \"\",\r\n          \"poDetailsId\": \"\",\r\n          \"poHeaderId\": \"\",\r\n          \"purchasePrice\": \"\",\r\n          \"qty\": \"\",\r\n          \"receiveQty\": \"\",\r\n          \"sCreationDate\": \"\",\r\n          \"sDeleteDate\": \"\",\r\n          \"sLastModifiedDate\": \"\",\r\n          \"sku\": \"\",\r\n          \"status\": \"\",\r\n          \"subStatus\": \"\",\r\n          \"upc\": \"\",\r\n          \"vendorSku\": \"\",\r\n          \"webPrice\": \"\"\r\n        }\r\n      ],\r\n      \"buyer\": \"\",\r\n      \"creationDate\": \"\",\r\n      \"currencyId\": \"\",\r\n      \"customTax\": \"\",\r\n      \"deleteDate\": \"\",\r\n      \"exchangeRate\": \"\",\r\n      \"expectedDeliveryDate\": \"\",\r\n      \"gstax\": \"\",\r\n      \"lastModifiedBy\": \"\",\r\n      \"lastModifiedDate\": \"\",\r\n      \"listMarkup\": \"\",\r\n      \"miscCost\": \"\",\r\n      \"miscCostOperator\": \"\",\r\n      \"orderDate\": \"\",\r\n      \"otherMiscCost\": \"\",\r\n      \"otherMiscDesc\": \"\",\r\n      \"poHeaderId\": \"\",\r\n      \"poNumber\": \"\",\r\n      \"sCreationDate\": \"\",\r\n      \"sDeleteDate\": \"\",\r\n      \"sExpectedDeliveryDate\": \"\",\r\n      \"sLastModifiedDate\": \"\",\r\n      \"sOrderDate\": \"\",\r\n      \"shippingCost\": \"\",\r\n      \"shippingCostOperator\": \"\",\r\n      \"status\": \"\",\r\n      \"storeBillTo\": \"\",\r\n      \"storeNumber\": \"\",\r\n      \"subStatus\": \"\",\r\n      \"vendorId\": \"\",\r\n      \"vendorOrder\": \"\",\r\n      \"webMarkup\": \"\"\r\n    }\r\n  ]\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/receiveProducts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"receiveProducts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateEventOrders",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"clientEventOrderHeaders\": [\r\n    {\r\n      \"clientEventOrderNumber\": \"\",\r\n      \"creationDate\": \"\",\r\n      \"currentTransNumber\": \"\",\r\n      \"customerAddress\": \"\",\r\n      \"customerName\": \"\",\r\n      \"customerPhone\": \"\",\r\n      \"deleteDate\": \"\",\r\n      \"deposit\": \"\",\r\n      \"isSelfPickup\": \"\",\r\n      \"lastAction\": \"\",\r\n      \"lastModifiedBy\": \"\",\r\n      \"lastModifiedDate\": \"\",\r\n      \"online\": \"\",\r\n      \"orderDateTime\": \"\",\r\n      \"orderStoreCname\": \"\",\r\n      \"orderStoreEname\": \"\",\r\n      \"orderStoreNumber\": \"\",\r\n      \"oriTransNumber\": \"\",\r\n      \"pickupDateTime\": \"\",\r\n      \"pickupStoreCname\": \"\",\r\n      \"pickupStoreEname\": \"\",\r\n      \"pickupStoreNumber\": \"\",\r\n      \"remainingValue\": \"\",\r\n      \"remark\": \"\",\r\n      \"sCreationDate\": \"\",\r\n      \"sDeleteDate\": \"\",\r\n      \"sLastModifiedDate\": \"\",\r\n      \"status\": \"\"\r\n    }\r\n  ],\r\n  \"storeNumber\": \"1890\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/updateEventOrders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"updateEventOrders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SASKTEL_getRecentBillpaymentTransList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"customerID\": \"\",\r\n  \"customerNumber\": \"\",\r\n  \"firstName\": \"\",\r\n  \"lastName\": \"\",\r\n  \"numOfTrans\": \"\",\r\n  \"transactionNumber\": \"\",\r\n  \"acctID\": \"\",\r\n  \"phoneNumber\": \"\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/SASKTEL_getRecentBillpaymentTransList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"SASKTEL_getRecentBillpaymentTransList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateCustomer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"customerVO\": {\r\n    \"AccountID\": \"\",\r\n    \"Address\": {\r\n      \"AddressID\": \"\",\r\n      \"AddressLine1\": \"\",\r\n      \"AddressLine2\": \"\",\r\n      \"City\": \"\",\r\n      \"CountryCode\": \"\",\r\n      \"CreationDate\": \"\",\r\n      \"DeleteDate\": \"\",\r\n      \"LastModifiedBy\": \"\",\r\n      \"LastModifiedDate\": \"\",\r\n      \"PoBox\": \"\",\r\n      \"PostalCode\": \"\",\r\n      \"ProvinceCode\": \"\",\r\n      \"StreetName\": \"\",\r\n      \"StreetNumber\": \"\",\r\n      \"UnitNumber\": \"\",\r\n      \"UnitType\": \"\",\r\n      \"sCreationDate\": \"\",\r\n      \"sDeleteDate\": \"\",\r\n      \"sLastModifiedDate\": \"\"\r\n    },\r\n    \"AddressID\": \"\",\r\n    \"BirthDate\": \"\",\r\n    \"Comments\": \"\",\r\n    \"CompanyName\": \"\",\r\n    \"CreationDate\": \"\",\r\n    \"CustomerID\": \"\",\r\n    \"CustomerNumber\": \"\",\r\n    \"DeleteDate\": \"\",\r\n    \"Department\": \"\",\r\n    \"EmailAddress\": \"\",\r\n    \"FirstName\": \"\",\r\n    \"IsOwner\": \"\",\r\n    \"LastModifiedBy\": \"\",\r\n    \"LastModifiedDate\": \"\",\r\n    \"LastName\": \"\",\r\n    \"MiddleName\": \"\",\r\n    \"ParentID\": \"\",\r\n    \"Status\": \"\",\r\n    \"StoreNumber\": \"\",\r\n    \"Title\": \"\",\r\n    \"Type\": \"\",\r\n    \"customerLoginProfile\": {\r\n      \"CreationDate\": \"\",\r\n      \"DeleteDate\": \"\",\r\n      \"LastModifiedBy\": \"\",\r\n      \"LastModifiedDate\": \"\",\r\n      \"accountId\": \"\",\r\n      \"customerId\": \"\",\r\n      \"firstLoginDate\": \"\",\r\n      \"franchiseeId\": \"\",\r\n      \"franchiseeName\": \"\",\r\n      \"lastModifiedBy\": \"\",\r\n      \"lastPwdChangeDate\": \"\",\r\n      \"numLoginAttemped\": \"\",\r\n      \"phone\": \"\",\r\n      \"posSuperPwd\": \"\",\r\n      \"posSuperUser\": \"\",\r\n      \"pwdExpiryDate\": \"\",\r\n      \"qqId\": \"\",\r\n      \"sCreationDate\": \"\",\r\n      \"sDeleteDate\": \"\",\r\n      \"sLastModifiedDate\": \"\",\r\n      \"tierId\": \"\",\r\n      \"userId\": \"\",\r\n      \"webChatId\": \"\",\r\n      \"webOrderPwd\": \"\"\r\n    },\r\n    \"customerProfileAtts\": [\r\n      {\r\n        \"CreationDate\": \"\",\r\n        \"DeleteDate\": \"\",\r\n        \"LastModifiedBy\": \"\",\r\n        \"LastModifiedDate\": \"\",\r\n        \"TypeID\": \"\",\r\n        \"Var0name\": \"\",\r\n        \"Var0value\": \"\",\r\n        \"Var10name\": \"\",\r\n        \"Var10value\": \"\",\r\n        \"Var11name\": \"\",\r\n        \"Var11value\": \"\",\r\n        \"Var12name\": \"\",\r\n        \"Var12value\": \"\",\r\n        \"Var13name\": \"\",\r\n        \"Var13value\": \"\",\r\n        \"Var14name\": \"\",\r\n        \"Var14value\": \"\",\r\n        \"Var1name\": \"\",\r\n        \"Var1value\": \"\",\r\n        \"Var2name\": \"\",\r\n        \"Var2value\": \"\",\r\n        \"Var3name\": \"\",\r\n        \"Var3value\": \"\",\r\n        \"Var4name\": \"\",\r\n        \"Var4value\": \"\",\r\n        \"Var5name\": \"\",\r\n        \"Var5value\": \"\",\r\n        \"Var6name\": \"\",\r\n        \"Var6value\": \"\",\r\n        \"Var7name\": \"\",\r\n        \"Var7value\": \"\",\r\n        \"Var8name\": \"\",\r\n        \"Var8value\": \"\",\r\n        \"Var9name\": \"\",\r\n        \"Var9value\": \"\",\r\n        \"sCreationDate\": \"\",\r\n        \"sDeleteDate\": \"\",\r\n        \"sLastModifiedDate\": \"\"\r\n      }\r\n    ],\r\n    \"membershipProfile\": {\r\n      \"creationDate\": \"\",\r\n      \"customerId\": \"\",\r\n      \"deleteDate\": \"\",\r\n      \"lastModifiedBy\": \"\",\r\n      \"lastModifiedDate\": \"\",\r\n      \"membershipNumber\": \"\",\r\n      \"pointsAccumulated\": \"\",\r\n      \"pointsBalance\": \"\",\r\n      \"purchasesAccumulated\": \"\",\r\n      \"sCreationDate\": \"\",\r\n      \"sDeleteDate\": \"\",\r\n      \"sLastModifiedDate\": \"\"\r\n    },\r\n    \"phoneList\": [\r\n      {\r\n        \"AreaCode\": \"\",\r\n        \"CountryCode\": \"\",\r\n        \"CreationDate\": \"\",\r\n        \"CustomerID\": \"\",\r\n        \"DeleteDate\": \"\",\r\n        \"Ext\": \"\",\r\n        \"IntlDialPrefix\": \"\",\r\n        \"LastModifiedBy\": \"\",\r\n        \"LastModifiedDate\": \"\",\r\n        \"Number\": \"\",\r\n        \"PhoneID\": \"\",\r\n        \"Type\": \"\",\r\n        \"sCreationDate\": \"\",\r\n        \"sDeleteDate\": \"\",\r\n        \"sLastModifiedDate\": \"\"\r\n      }\r\n    ],\r\n    \"sBirthDate\": \"\",\r\n    \"sCreationDate\": \"\",\r\n    \"sDeleteDate\": \"\",\r\n    \"sLastModifiedDate\": \"\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/UpdateCustomer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"UpdateCustomer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddCustomer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"customerVO\": {\r\n    \"AccountID\": \"\",\r\n    \"Address\": {\r\n      \"AddressID\": \"\",\r\n      \"AddressLine1\": \"\",\r\n      \"AddressLine2\": \"\",\r\n      \"City\": \"\",\r\n      \"CountryCode\": \"\",\r\n      \"CreationDate\": \"\",\r\n      \"DeleteDate\": \"\",\r\n      \"LastModifiedBy\": \"\",\r\n      \"LastModifiedDate\": \"\",\r\n      \"PoBox\": \"\",\r\n      \"PostalCode\": \"\",\r\n      \"ProvinceCode\": \"\",\r\n      \"StreetName\": \"\",\r\n      \"StreetNumber\": \"\",\r\n      \"UnitNumber\": \"\",\r\n      \"UnitType\": \"\",\r\n      \"sCreationDate\": \"\",\r\n      \"sDeleteDate\": \"\",\r\n      \"sLastModifiedDate\": \"\"\r\n    },\r\n    \"AddressID\": \"\",\r\n    \"BirthDate\": \"\",\r\n    \"Comments\": \"\",\r\n    \"CompanyName\": \"\",\r\n    \"CreationDate\": \"\",\r\n    \"CustomerID\": \"\",\r\n    \"CustomerNumber\": \"\",\r\n    \"DeleteDate\": \"\",\r\n    \"Department\": \"\",\r\n    \"EmailAddress\": \"\",\r\n    \"FirstName\": \"\",\r\n    \"IsOwner\": \"\",\r\n    \"LastModifiedBy\": \"\",\r\n    \"LastModifiedDate\": \"\",\r\n    \"LastName\": \"\",\r\n    \"MiddleName\": \"\",\r\n    \"ParentID\": \"\",\r\n    \"Status\": \"\",\r\n    \"StoreNumber\": \"\",\r\n    \"Title\": \"\",\r\n    \"Type\": \"\",\r\n    \"customerLoginProfile\": {\r\n      \"CreationDate\": \"\",\r\n      \"DeleteDate\": \"\",\r\n      \"LastModifiedBy\": \"\",\r\n      \"LastModifiedDate\": \"\",\r\n      \"accountId\": \"\",\r\n      \"customerId\": \"\",\r\n      \"firstLoginDate\": \"\",\r\n      \"franchiseeId\": \"\",\r\n      \"franchiseeName\": \"\",\r\n      \"lastModifiedBy\": \"\",\r\n      \"lastPwdChangeDate\": \"\",\r\n      \"numLoginAttemped\": \"\",\r\n      \"phone\": \"\",\r\n      \"posSuperPwd\": \"\",\r\n      \"posSuperUser\": \"\",\r\n      \"pwdExpiryDate\": \"\",\r\n      \"qqId\": \"\",\r\n      \"sCreationDate\": \"\",\r\n      \"sDeleteDate\": \"\",\r\n      \"sLastModifiedDate\": \"\",\r\n      \"tierId\": \"\",\r\n      \"userId\": \"\",\r\n      \"webChatId\": \"\",\r\n      \"webOrderPwd\": \"\"\r\n    },\r\n    \"customerProfileAtts\": [\r\n      {\r\n        \"CreationDate\": \"\",\r\n        \"DeleteDate\": \"\",\r\n        \"LastModifiedBy\": \"\",\r\n        \"LastModifiedDate\": \"\",\r\n        \"TypeID\": \"\",\r\n        \"Var0name\": \"\",\r\n        \"Var0value\": \"\",\r\n        \"Var10name\": \"\",\r\n        \"Var10value\": \"\",\r\n        \"Var11name\": \"\",\r\n        \"Var11value\": \"\",\r\n        \"Var12name\": \"\",\r\n        \"Var12value\": \"\",\r\n        \"Var13name\": \"\",\r\n        \"Var13value\": \"\",\r\n        \"Var14name\": \"\",\r\n        \"Var14value\": \"\",\r\n        \"Var1name\": \"\",\r\n        \"Var1value\": \"\",\r\n        \"Var2name\": \"\",\r\n        \"Var2value\": \"\",\r\n        \"Var3name\": \"\",\r\n        \"Var3value\": \"\",\r\n        \"Var4name\": \"\",\r\n        \"Var4value\": \"\",\r\n        \"Var5name\": \"\",\r\n        \"Var5value\": \"\",\r\n        \"Var6name\": \"\",\r\n        \"Var6value\": \"\",\r\n        \"Var7name\": \"\",\r\n        \"Var7value\": \"\",\r\n        \"Var8name\": \"\",\r\n        \"Var8value\": \"\",\r\n        \"Var9name\": \"\",\r\n        \"Var9value\": \"\",\r\n        \"sCreationDate\": \"\",\r\n        \"sDeleteDate\": \"\",\r\n        \"sLastModifiedDate\": \"\"\r\n      }\r\n    ],\r\n    \"membershipProfile\": {\r\n      \"creationDate\": \"\",\r\n      \"customerId\": \"\",\r\n      \"deleteDate\": \"\",\r\n      \"lastModifiedBy\": \"\",\r\n      \"lastModifiedDate\": \"\",\r\n      \"membershipNumber\": \"\",\r\n      \"pointsAccumulated\": \"\",\r\n      \"pointsBalance\": \"\",\r\n      \"purchasesAccumulated\": \"\",\r\n      \"sCreationDate\": \"\",\r\n      \"sDeleteDate\": \"\",\r\n      \"sLastModifiedDate\": \"\"\r\n    },\r\n    \"phoneList\": [\r\n      {\r\n        \"AreaCode\": \"\",\r\n        \"CountryCode\": \"\",\r\n        \"CreationDate\": \"\",\r\n        \"CustomerID\": \"\",\r\n        \"DeleteDate\": \"\",\r\n        \"Ext\": \"\",\r\n        \"IntlDialPrefix\": \"\",\r\n        \"LastModifiedBy\": \"\",\r\n        \"LastModifiedDate\": \"\",\r\n        \"Number\": \"\",\r\n        \"PhoneID\": \"\",\r\n        \"Type\": \"\",\r\n        \"sCreationDate\": \"\",\r\n        \"sDeleteDate\": \"\",\r\n        \"sLastModifiedDate\": \"\"\r\n      }\r\n    ],\r\n    \"sBirthDate\": \"\",\r\n    \"sCreationDate\": \"\",\r\n    \"sDeleteDate\": \"\",\r\n    \"sLastModifiedDate\": \"\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/AddCustomer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"AddCustomer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "setEmployeeAttendance",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"attendanceVO\": {\r\n    \"CreationDate\": \"\",\r\n    \"DeleteDate\": \"\",\r\n    \"LastModifiedBy\": \"\",\r\n    \"LastModifiedDate\": \"\",\r\n    \"StoreID\": \"\",\r\n    \"attendanceID\": \"\",\r\n    \"businessDay\": \"\",\r\n    \"employeeID\": \"\",\r\n    \"forceSignOut\": \"\",\r\n    \"removeEmpAtt\": \"\",\r\n    \"sBusinessDay\": \"\",\r\n    \"sCreationDate\": \"\",\r\n    \"sDeleteDate\": \"\",\r\n    \"sLastModifiedDate\": \"\",\r\n    \"sTimeIn\": \"\",\r\n    \"sTimeOut\": \"\",\r\n    \"status\": \"\",\r\n    \"timeIn\": \"\",\r\n    \"timeOut\": \"\",\r\n    \"totalHours\": \"\"\r\n  },\r\n  \"signInType\": \"\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/setEmployeeAttendance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"setEmployeeAttendance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateEmployeeAttendances",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"employeeAttendance\": [\r\n    {\r\n      \"CreationDate\": \"\",\r\n      \"DeleteDate\": \"\",\r\n      \"LastModifiedBy\": \"\",\r\n      \"LastModifiedDate\": \"\",\r\n      \"StoreID\": \"\",\r\n      \"attendanceID\": \"\",\r\n      \"businessDay\": \"\",\r\n      \"employeeID\": \"\",\r\n      \"forceSignOut\": \"\",\r\n      \"removeEmpAtt\": \"\",\r\n      \"sBusinessDay\": \"\",\r\n      \"sCreationDate\": \"\",\r\n      \"sDeleteDate\": \"\",\r\n      \"sLastModifiedDate\": \"\",\r\n      \"sTimeIn\": \"\",\r\n      \"sTimeOut\": \"\",\r\n      \"status\": \"\",\r\n      \"timeIn\": \"\",\r\n      \"timeOut\": \"\",\r\n      \"totalHours\": \"\"\r\n    }\r\n  ]\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/updateEmployeeAttendances",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"updateEmployeeAttendances"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "setInventoryCountDetails",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"inventoryCount\": {\r\n    \"actualCountDt\": \"\",\r\n    \"createdBy\": \"\",\r\n    \"creationDate\": \"\",\r\n    \"cycleCountId\": \"\",\r\n    \"deleteDate\": \"\",\r\n    \"documentDt\": \"\",\r\n    \"documentNo\": \"\",\r\n    \"documentYear\": \"\",\r\n    \"employeeNo\": \"\",\r\n    \"lastModifiedBy\": \"\",\r\n    \"lastModifiedDate\": \"\",\r\n    \"plannedCountDt\": \"\",\r\n    \"resubmitCount\": \"\",\r\n    \"sActualCountDt\": \"\",\r\n    \"sCreationDate\": \"\",\r\n    \"sDeleteDate\": \"\",\r\n    \"sDocumentDt\": \"\",\r\n    \"sLastModifiedDate\": \"\",\r\n    \"sPlannedCountDt\": \"\",\r\n    \"saleableInd\": \"\",\r\n    \"status\": \"\",\r\n    \"statusDes\": \"\",\r\n    \"statusId\": \"\",\r\n    \"storageLoc\": \"\",\r\n    \"storeId\": \"\"\r\n  },\r\n  \"inventoryCountDetails\": [\r\n    {\r\n      \"adjustedQty\": \"\",\r\n      \"adjustedQtyFraction\": \"\",\r\n      \"creationDate\": \"\",\r\n      \"cycleCountId\": \"\",\r\n      \"deleteDate\": \"\",\r\n      \"inTransitQty\": \"\",\r\n      \"inventoryCountDetailId\": \"\",\r\n      \"inventoryCountQty\": \"\",\r\n      \"inventoryCountQtyFraction\": \"\",\r\n      \"isAdhoc\": \"\",\r\n      \"lastModifiedBy\": \"\",\r\n      \"lastModifiedDate\": \"\",\r\n      \"lineNo\": \"\",\r\n      \"lineStatus\": \"\",\r\n      \"originalQty\": \"\",\r\n      \"originalQtyFraction\": \"\",\r\n      \"productCd\": \"\",\r\n      \"returnType\": \"\",\r\n      \"rmaQty\": \"\",\r\n      \"sCreationDate\": \"\",\r\n      \"sDeleteDate\": \"\",\r\n      \"sLastModifiedDate\": \"\",\r\n      \"sapMaterialNo\": \"\",\r\n      \"sapQty\": \"\",\r\n      \"scannerSeqNo\": \"\",\r\n      \"serializedInd\": \"\",\r\n      \"unitType\": \"\"\r\n    }\r\n  ]\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/setInventoryCountDetails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"setInventoryCountDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "setFileTransferList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"fileList\": [\r\n    {\r\n      \"creationDate\": \"\",\r\n      \"deleteDate\": \"\",\r\n      \"fileCRC\": \"\",\r\n      \"fileName\": \"\",\r\n      \"fileSubType\": \"\",\r\n      \"fileType\": \"\",\r\n      \"lastModifiedBy\": \"\",\r\n      \"lastModifiedDate\": \"\",\r\n      \"sCreationDate\": \"\",\r\n      \"sDeleteDate\": \"\",\r\n      \"sLastModifiedDate\": \"\",\r\n      \"status\": \"\",\r\n      \"storeNumber\": \"\",\r\n      \"transferDirection\": \"\",\r\n      \"transferId\": \"\"\r\n    }\r\n  ],\r\n  \"storeNumber\": \"\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/setFileTransferList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"setFileTransferList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "processTransaction",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"retailTransaction\": {\r\n    \"BusinessDate\": \"\",\r\n    \"CashierID\": \"\",\r\n    \"ChannelID\": \"\",\r\n    \"ChannelType\": \"\",\r\n    \"CreationDate\": \"\",\r\n    \"CreditNoteList\": [\r\n      {\r\n        \"AppliedAmount\": \"\",\r\n        \"AppliedTransNum\": \"\",\r\n        \"CreatedBy\": \"\",\r\n        \"CreationDate\": \"\",\r\n        \"CreditAmount\": \"\",\r\n        \"CreditNoteNum\": \"\",\r\n        \"DeleteDate\": \"\",\r\n        \"ExpiryDate\": \"\",\r\n        \"LastModifiedBy\": \"\",\r\n        \"LastModifiedDate\": \"\",\r\n        \"RefundTransNum\": \"\",\r\n        \"Status\": \"\",\r\n        \"StoreNumber\": \"\",\r\n        \"sCreationDate\": \"\",\r\n        \"sDeleteDate\": \"\",\r\n        \"sExpiryDate\": \"\",\r\n        \"sLastModifiedDate\": \"\"\r\n      }\r\n    ],\r\n    \"Customer\": {\r\n      \"AccountID\": \"\",\r\n      \"Address\": {\r\n        \"AddressID\": \"\",\r\n        \"AddressLine1\": \"\",\r\n        \"AddressLine2\": \"\",\r\n        \"City\": \"\",\r\n        \"CountryCode\": \"\",\r\n        \"CreationDate\": \"\",\r\n        \"DeleteDate\": \"\",\r\n        \"LastModifiedBy\": \"\",\r\n        \"LastModifiedDate\": \"\",\r\n        \"PoBox\": \"\",\r\n        \"PostalCode\": \"\",\r\n        \"ProvinceCode\": \"\",\r\n        \"StreetName\": \"\",\r\n        \"StreetNumber\": \"\",\r\n        \"UnitNumber\": \"\",\r\n        \"UnitType\": \"\",\r\n        \"sCreationDate\": \"\",\r\n        \"sDeleteDate\": \"\",\r\n        \"sLastModifiedDate\": \"\"\r\n      },\r\n      \"AddressID\": \"\",\r\n      \"BirthDate\": \"\",\r\n      \"Comments\": \"\",\r\n      \"CompanyName\": \"\",\r\n      \"CreationDate\": \"\",\r\n      \"CustomerID\": \"\",\r\n      \"CustomerNumber\": \"\",\r\n      \"DeleteDate\": \"\",\r\n      \"Department\": \"\",\r\n      \"EmailAddress\": \"\",\r\n      \"FirstName\": \"\",\r\n      \"IsOwner\": \"\",\r\n      \"LastModifiedBy\": \"\",\r\n      \"LastModifiedDate\": \"\",\r\n      \"LastName\": \"\",\r\n      \"MiddleName\": \"\",\r\n      \"ParentID\": \"\",\r\n      \"Status\": \"\",\r\n      \"StoreNumber\": \"\",\r\n      \"Title\": \"\",\r\n      \"Type\": \"\",\r\n      \"customerLoginProfile\": {\r\n        \"CreationDate\": \"\",\r\n        \"DeleteDate\": \"\",\r\n        \"LastModifiedBy\": \"\",\r\n        \"LastModifiedDate\": \"\",\r\n        \"accountId\": \"\",\r\n        \"customerId\": \"\",\r\n        \"firstLoginDate\": \"\",\r\n        \"franchiseeId\": \"\",\r\n        \"franchiseeName\": \"\",\r\n        \"lastModifiedBy\": \"\",\r\n        \"lastPwdChangeDate\": \"\",\r\n        \"numLoginAttemped\": \"\",\r\n        \"phone\": \"\",\r\n        \"posSuperPwd\": \"\",\r\n        \"posSuperUser\": \"\",\r\n        \"pwdExpiryDate\": \"\",\r\n        \"qqId\": \"\",\r\n        \"sCreationDate\": \"\",\r\n        \"sDeleteDate\": \"\",\r\n        \"sLastModifiedDate\": \"\",\r\n        \"tierId\": \"\",\r\n        \"userId\": \"\",\r\n        \"webChatId\": \"\",\r\n        \"webOrderPwd\": \"\"\r\n      },\r\n      \"customerProfileAtts\": [\r\n        {\r\n          \"CreationDate\": \"\",\r\n          \"DeleteDate\": \"\",\r\n          \"LastModifiedBy\": \"\",\r\n          \"LastModifiedDate\": \"\",\r\n          \"TypeID\": \"\",\r\n          \"Var0name\": \"\",\r\n          \"Var0value\": \"\",\r\n          \"Var10name\": \"\",\r\n          \"Var10value\": \"\",\r\n          \"Var11name\": \"\",\r\n          \"Var11value\": \"\",\r\n          \"Var12name\": \"\",\r\n          \"Var12value\": \"\",\r\n          \"Var13name\": \"\",\r\n          \"Var13value\": \"\",\r\n          \"Var14name\": \"\",\r\n          \"Var14value\": \"\",\r\n          \"Var1name\": \"\",\r\n          \"Var1value\": \"\",\r\n          \"Var2name\": \"\",\r\n          \"Var2value\": \"\",\r\n          \"Var3name\": \"\",\r\n          \"Var3value\": \"\",\r\n          \"Var4name\": \"\",\r\n          \"Var4value\": \"\",\r\n          \"Var5name\": \"\",\r\n          \"Var5value\": \"\",\r\n          \"Var6name\": \"\",\r\n          \"Var6value\": \"\",\r\n          \"Var7name\": \"\",\r\n          \"Var7value\": \"\",\r\n          \"Var8name\": \"\",\r\n          \"Var8value\": \"\",\r\n          \"Var9name\": \"\",\r\n          \"Var9value\": \"\",\r\n          \"sCreationDate\": \"\",\r\n          \"sDeleteDate\": \"\",\r\n          \"sLastModifiedDate\": \"\"\r\n        }\r\n      ],\r\n      \"membershipProfile\": {\r\n        \"creationDate\": \"\",\r\n        \"customerId\": \"\",\r\n        \"deleteDate\": \"\",\r\n        \"lastModifiedBy\": \"\",\r\n        \"lastModifiedDate\": \"\",\r\n        \"membershipNumber\": \"\",\r\n        \"pointsAccumulated\": \"\",\r\n        \"pointsBalance\": \"\",\r\n        \"purchasesAccumulated\": \"\",\r\n        \"sCreationDate\": \"\",\r\n        \"sDeleteDate\": \"\",\r\n        \"sLastModifiedDate\": \"\"\r\n      },\r\n      \"phoneList\": [\r\n        {\r\n          \"AreaCode\": \"\",\r\n          \"CountryCode\": \"\",\r\n          \"CreationDate\": \"\",\r\n          \"CustomerID\": \"\",\r\n          \"DeleteDate\": \"\",\r\n          \"Ext\": \"\",\r\n          \"IntlDialPrefix\": \"\",\r\n          \"LastModifiedBy\": \"\",\r\n          \"LastModifiedDate\": \"\",\r\n          \"Number\": \"\",\r\n          \"PhoneID\": \"\",\r\n          \"Type\": \"\",\r\n          \"sCreationDate\": \"\",\r\n          \"sDeleteDate\": \"\",\r\n          \"sLastModifiedDate\": \"\"\r\n        }\r\n      ],\r\n      \"sBirthDate\": \"\",\r\n      \"sCreationDate\": \"\",\r\n      \"sDeleteDate\": \"\",\r\n      \"sLastModifiedDate\": \"\"\r\n    },\r\n    \"CustomerID\": \"\",\r\n    \"CustomerRefNum1\": \"\",\r\n    \"CustomerRefNum2\": \"\",\r\n    \"DeleteDate\": \"\",\r\n    \"DepartmentID\": \"\",\r\n    \"EndDatetime\": \"\",\r\n    \"FirstName\": \"\",\r\n    \"KeyIndex\": \"\",\r\n    \"LastModifiedBy\": \"\",\r\n    \"LastModifiedDate\": \"\",\r\n    \"LastName\": \"\",\r\n    \"PhoneNumber\": \"\",\r\n    \"PostingDatetime\": \"\",\r\n    \"RestaurantTransactionList\": [\r\n      {\r\n        \"arrivalTime\": \"\",\r\n        \"completionTime\": \"\",\r\n        \"creationDate\": \"\",\r\n        \"customerName\": \"\",\r\n        \"deleteDate\": \"\",\r\n        \"gratuity\": \"\",\r\n        \"gratuityPaymentType\": \"\",\r\n        \"lastModifiedBy\": \"\",\r\n        \"lastModifiedDate\": \"\",\r\n        \"mealCompletionTime\": \"\",\r\n        \"mealStartTime\": \"\",\r\n        \"numberItem\": \"\",\r\n        \"numberOfGuest\": \"\",\r\n        \"orderNumber\": \"\",\r\n        \"reservationId\": \"\",\r\n        \"sArrivalTime\": \"\",\r\n        \"sCompletionTime\": \"\",\r\n        \"sCreationDate\": \"\",\r\n        \"sDeleteDate\": \"\",\r\n        \"sLastModifiedDate\": \"\",\r\n        \"sMealCompletionTime\": \"\",\r\n        \"sMealStartTime\": \"\",\r\n        \"sSeatingTime\": \"\",\r\n        \"sTenderTime\": \"\",\r\n        \"seatingTime\": \"\",\r\n        \"serviceCharge\": \"\",\r\n        \"status\": \"\",\r\n        \"tableNumber\": \"\",\r\n        \"taxableAmt\": \"\",\r\n        \"tenderTime\": \"\",\r\n        \"transNumber\": \"\",\r\n        \"type\": \"\"\r\n      }\r\n    ],\r\n    \"RetailTransAttList\": [\r\n      {\r\n        \"AttLineID\": \"\",\r\n        \"CreationDate\": \"\",\r\n        \"DeleteDate\": \"\",\r\n        \"LastModifiedBy\": \"\",\r\n        \"LastModifiedDate\": \"\",\r\n        \"TransNumber\": \"\",\r\n        \"Var0name\": \"\",\r\n        \"Var0value\": \"\",\r\n        \"Var1name\": \"\",\r\n        \"Var1value\": \"\",\r\n        \"Var2name\": \"\",\r\n        \"Var2value\": \"\",\r\n        \"Var3name\": \"\",\r\n        \"Var3value\": \"\",\r\n        \"Var4name\": \"\",\r\n        \"Var4value\": \"\",\r\n        \"Var5name\": \"\",\r\n        \"Var5value\": \"\",\r\n        \"Var6name\": \"\",\r\n        \"Var6value\": \"\",\r\n        \"Var7name\": \"\",\r\n        \"Var7value\": \"\",\r\n        \"Var8name\": \"\",\r\n        \"Var8value\": \"\",\r\n        \"Var9name\": \"\",\r\n        \"Var9value\": \"\",\r\n        \"key\": \"\",\r\n        \"obj\": \"\",\r\n        \"sCreationDate\": \"\",\r\n        \"sDeleteDate\": \"\",\r\n        \"sLastModifiedDate\": \"\"\r\n      }\r\n    ],\r\n    \"RetailTransactionLoyalty\": {\r\n      \"creationDate\": \"\",\r\n      \"currentLoyaltyLevelName\": \"\",\r\n      \"customerId\": \"\",\r\n      \"deleteDate\": \"\",\r\n      \"lastModifiedBy\": \"\",\r\n      \"lastModifiedDate\": \"\",\r\n      \"membershipNumber\": \"\",\r\n      \"newPointsBalance\": \"\",\r\n      \"nextLoyaltyLevelName\": \"\",\r\n      \"nextVisitMemberDiscount\": \"\",\r\n      \"pointAccomRuleRevenue\": \"\",\r\n      \"pointAccumRulePromo\": \"\",\r\n      \"pointsEarnedAllProducts\": \"\",\r\n      \"pointsEarnedRevenue\": \"\",\r\n      \"pointsEarnedTotal\": \"\",\r\n      \"pointsRedeemdVIP\": \"\",\r\n      \"pointsRedeemedAllProducts\": \"\",\r\n      \"pointsRefunded\": \"\",\r\n      \"previousPointsBalance\": \"\",\r\n      \"qualifiedRevenueAmount\": \"\",\r\n      \"qualifiedTotalAmount\": \"\",\r\n      \"sCreationDate\": \"\",\r\n      \"sDeleteDate\": \"\",\r\n      \"sLastModifiedDate\": \"\",\r\n      \"savedAmount\": \"\",\r\n      \"transNumber\": \"\"\r\n    },\r\n    \"SalesPersonID\": \"\",\r\n    \"SendState\": \"\",\r\n    \"StartDatetime\": \"\",\r\n    \"Status\": \"\",\r\n    \"StoreNumber\": \"\",\r\n    \"Subtotal\": \"\",\r\n    \"TaxableTotal\": \"\",\r\n    \"TerminalID\": \"\",\r\n    \"Total\": \"\",\r\n    \"TotalItems\": \"\",\r\n    \"TotalTax\": \"\",\r\n    \"TransCouponGiftCertList\": [\r\n      {\r\n        \"appliedAmount\": \"\",\r\n        \"certificateId\": \"\",\r\n        \"creationDate\": \"\",\r\n        \"deleteDate\": \"\",\r\n        \"lastModifiedBy\": \"\",\r\n        \"lastModifiedDate\": \"\",\r\n        \"sCreationDate\": \"\",\r\n        \"sDeleteDate\": \"\",\r\n        \"sLastModifiedDate\": \"\",\r\n        \"sequenceId\": \"\",\r\n        \"serialNumber\": \"\",\r\n        \"transNumber\": \"\",\r\n        \"value\": \"\"\r\n      }\r\n    ],\r\n    \"TransEventList\": [\r\n      {\r\n        \"CreationDate\": \"\",\r\n        \"DeleteDate\": \"\",\r\n        \"LastModifiedBy\": \"\",\r\n        \"LastModifiedDate\": \"\",\r\n        \"TransEventDesc\": \"\",\r\n        \"TransEventLineID\": \"\",\r\n        \"TransEventTime\": \"\",\r\n        \"TransEventTypeID\": \"\",\r\n        \"TransLineID\": \"\",\r\n        \"TransNumber\": \"\",\r\n        \"UserID\": \"\",\r\n        \"Var0Name\": \"\",\r\n        \"Var0Value\": \"\",\r\n        \"Var1Name\": \"\",\r\n        \"Var1Value\": \"\",\r\n        \"Var2Name\": \"\",\r\n        \"Var2Value\": \"\",\r\n        \"Var3Name\": \"\",\r\n        \"Var3Value\": \"\",\r\n        \"Var4Name\": \"\",\r\n        \"Var4Value\": \"\",\r\n        \"Var5Name\": \"\",\r\n        \"Var5Value\": \"\",\r\n        \"Var6Name\": \"\",\r\n        \"Var6Value\": \"\",\r\n        \"Var7Name\": \"\",\r\n        \"Var7Value\": \"\",\r\n        \"Var8Name\": \"\",\r\n        \"Var8Value\": \"\",\r\n        \"Var9Name\": \"\",\r\n        \"Var9Value\": \"\",\r\n        \"sCreationDate\": \"\",\r\n        \"sDeleteDate\": \"\",\r\n        \"sLastModifiedDate\": \"\",\r\n        \"sTransEventTime\": \"\"\r\n      }\r\n    ],\r\n    \"TransItemLineList\": [\r\n      {\r\n        \"ChannelID\": \"\",\r\n        \"ChannelType\": \"\",\r\n        \"Comments\": \"\",\r\n        \"Cost\": \"\",\r\n        \"CreationDate\": \"\",\r\n        \"DeleteDate\": \"\",\r\n        \"EndOfLife\": \"\",\r\n        \"IsDispListAtPos\": \"\",\r\n        \"ItemDesc\": \"\",\r\n        \"ItemID\": \"\",\r\n        \"ItemType\": \"\",\r\n        \"LastModifiedBy\": \"\",\r\n        \"LastModifiedDate\": \"\",\r\n        \"LineSubType\": \"\",\r\n        \"LineType\": \"\",\r\n        \"ListPrice\": \"\",\r\n        \"Make\": \"\",\r\n        \"ManufacturerName\": \"\",\r\n        \"Model\": \"\",\r\n        \"PLU\": \"\",\r\n        \"PriceSchemeID\": \"\",\r\n        \"QTY\": \"\",\r\n        \"ReceiptDisplayOrder\": \"\",\r\n        \"SalePrice\": \"\",\r\n        \"SalesPersonID\": \"\",\r\n        \"SerialNum\": \"\",\r\n        \"SoldPrice\": \"\",\r\n        \"SoldPriceTax\": \"\",\r\n        \"SoldPriceTotal\": \"\",\r\n        \"TransCommentList\": [\r\n          {\r\n            \"comment\": \"\",\r\n            \"creationDate\": \"\",\r\n            \"deleteDate\": \"\",\r\n            \"lastModifiedBy\": \"\",\r\n            \"lastModifiedDate\": \"\",\r\n            \"sCreationDate\": \"\",\r\n            \"sDeleteDate\": \"\",\r\n            \"sLastModifiedDate\": \"\",\r\n            \"transLineId\": \"\",\r\n            \"transNumber\": \"\",\r\n            \"type\": \"\"\r\n          }\r\n        ],\r\n        \"TransItemLineActivationList\": [\r\n          {\r\n            \"ActivationDate\": \"\",\r\n            \"ActivationDiscount\": \"\",\r\n            \"ActivationFee\": \"\",\r\n            \"ActivationLineID\": \"\",\r\n            \"Ban\": \"\",\r\n            \"BanType\": \"\",\r\n            \"CreationDate\": \"\",\r\n            \"DeleteDate\": \"\",\r\n            \"Deposit\": \"\",\r\n            \"InvoicePaymentType\": \"\",\r\n            \"LastModifiedBy\": \"\",\r\n            \"LastModifiedDate\": \"\",\r\n            \"MobileNumber\": \"\",\r\n            \"PricePlan\": \"\",\r\n            \"RefNumber\": \"\",\r\n            \"SerialNumber\": \"\",\r\n            \"SubscriberID\": \"\",\r\n            \"Term\": \"\",\r\n            \"TransLineID\": \"\",\r\n            \"TransNumber\": \"\",\r\n            \"TransactionIdentifier\": \"\",\r\n            \"sActivationDate\": \"\",\r\n            \"sCreationDate\": \"\",\r\n            \"sDeleteDate\": \"\",\r\n            \"sLastModifiedDate\": \"\"\r\n          }\r\n        ],\r\n        \"TransItemLineAttList\": [\r\n          {\r\n            \"CreationDate\": \"\",\r\n            \"DeleteDate\": \"\",\r\n            \"ItemID\": \"\",\r\n            \"LastModifiedBy\": \"\",\r\n            \"LastModifiedDate\": \"\",\r\n            \"LineExt\": \"\",\r\n            \"TransLineID\": \"\",\r\n            \"TrasnNumber\": \"\",\r\n            \"TypeID\": \"\",\r\n            \"Var0name\": \"\",\r\n            \"Var0value\": \"\",\r\n            \"Var1name\": \"\",\r\n            \"Var1value\": \"\",\r\n            \"Var2name\": \"\",\r\n            \"Var2value\": \"\",\r\n            \"Var3name\": \"\",\r\n            \"Var3value\": \"\",\r\n            \"Var4name\": \"\",\r\n            \"Var4value\": \"\",\r\n            \"Var5name\": \"\",\r\n            \"Var5value\": \"\",\r\n            \"Var6name\": \"\",\r\n            \"Var6value\": \"\",\r\n            \"Var7name\": \"\",\r\n            \"Var7value\": \"\",\r\n            \"Var8name\": \"\",\r\n            \"Var8value\": \"\",\r\n            \"Var9name\": \"\",\r\n            \"Var9value\": \"\",\r\n            \"sCreationDate\": \"\",\r\n            \"sDeleteDate\": \"\",\r\n            \"sLastModifiedDate\": \"\"\r\n          }\r\n        ],\r\n        \"TransItemLineComboList\": [\r\n          {\r\n            \"additionalPrice\": \"\",\r\n            \"creationDate\": \"\",\r\n            \"deleteDate\": \"\",\r\n            \"lastModifiedBy\": \"\",\r\n            \"lastModifiedDate\": \"\",\r\n            \"parentTransLineId\": \"\",\r\n            \"sCreationDate\": \"\",\r\n            \"sDeleteDate\": \"\",\r\n            \"sLastModifiedDate\": \"\",\r\n            \"showSequence\": \"\",\r\n            \"transLineId\": \"\",\r\n            \"transNumber\": \"\"\r\n          }\r\n        ],\r\n        \"TransItemLineDiscountList\": [\r\n          {\r\n            \"BaseValue\": \"\",\r\n            \"CreationDate\": \"\",\r\n            \"DeleteDate\": \"\",\r\n            \"DiscountCode\": \"\",\r\n            \"DiscountLineID\": \"\",\r\n            \"DiscountedAmount\": \"\",\r\n            \"LastModifiedBy\": \"\",\r\n            \"LastModifiedDate\": \"\",\r\n            \"MaterialID\": \"\",\r\n            \"OverrideAmount\": \"\",\r\n            \"Percentage\": \"\",\r\n            \"PromSchemeID\": \"\",\r\n            \"ReasonCode\": \"\",\r\n            \"SalePrice\": \"\",\r\n            \"TransLineNumber\": \"\",\r\n            \"TransNumber\": \"\",\r\n            \"TypeID\": \"\",\r\n            \"sCreationDate\": \"\",\r\n            \"sDeleteDate\": \"\",\r\n            \"sLastModifiedDate\": \"\"\r\n          }\r\n        ],\r\n        \"TransItemLineInstructionList\": [\r\n          {\r\n            \"additionalPrice\": \"\",\r\n            \"baseItemId\": \"\",\r\n            \"cost\": \"\",\r\n            \"creationDate\": \"\",\r\n            \"deleteDate\": \"\",\r\n            \"description\": \"\",\r\n            \"instructionId\": \"\",\r\n            \"instructionItemList\": [\r\n              {\r\n                \"Cost\": \"\",\r\n                \"CreationDate\": \"\",\r\n                \"CurrencyID\": \"\",\r\n                \"DeleteDate\": \"\",\r\n                \"EndDate\": \"\",\r\n                \"EndOfLife\": \"\",\r\n                \"IsDispListAtPOS\": \"\",\r\n                \"ItemAttList\": [\r\n                  {\r\n                    \"CreationDate\": \"\",\r\n                    \"DeleteDate\": \"\",\r\n                    \"ItemID\": \"\",\r\n                    \"LastModifiedBy\": \"\",\r\n                    \"LastModifiedDate\": \"\",\r\n                    \"TypeID\": \"\",\r\n                    \"Var0Name\": \"\",\r\n                    \"Var0Value\": \"\",\r\n                    \"Var1Name\": \"\",\r\n                    \"Var1Value\": \"\",\r\n                    \"Var2Name\": \"\",\r\n                    \"Var2Value\": \"\",\r\n                    \"Var3Name\": \"\",\r\n                    \"Var3Value\": \"\",\r\n                    \"Var4Name\": \"\",\r\n                    \"Var4Value\": \"\",\r\n                    \"sCreationDate\": \"\",\r\n                    \"sDeleteDate\": \"\",\r\n                    \"sLastModifiedDate\": \"\"\r\n                  }\r\n                ],\r\n                \"ItemAttMaximList\": [\r\n                  {\r\n                    \"actionCode\": \"\",\r\n                    \"activeProd\": \"\",\r\n                    \"autoRtn\": \"\",\r\n                    \"creationDate\": \"\",\r\n                    \"deleteDate\": \"\",\r\n                    \"discProd\": \"\",\r\n                    \"forceModif\": \"\",\r\n                    \"gstRate\": \"\",\r\n                    \"instantScan\": \"\",\r\n                    \"itemGrpCode\": \"\",\r\n                    \"itemId\": \"\",\r\n                    \"lastModifiedBy\": \"\",\r\n                    \"lastModifiedDate\": \"\",\r\n                    \"lkpFlag\": \"\",\r\n                    \"nCakeSale\": \"\",\r\n                    \"openPrice\": \"\",\r\n                    \"preOrder\": \"\",\r\n                    \"reserved\": \"\",\r\n                    \"sCreationDate\": \"\",\r\n                    \"sDeleteDate\": \"\",\r\n                    \"sLastModifiedDate\": \"\",\r\n                    \"serviceChg\": \"\",\r\n                    \"setMenu\": \"\",\r\n                    \"takeaway\": \"\",\r\n                    \"unitBase\": \"\"\r\n                  }\r\n                ],\r\n                \"ItemBundleList\": [\r\n                  {\r\n                    \"ChildItemID\": \"\",\r\n                    \"CreationDate\": \"\",\r\n                    \"DeleteDate\": \"\",\r\n                    \"ItemID\": \"\",\r\n                    \"LastModifiedBy\": \"\",\r\n                    \"LastModifiedDate\": \"\",\r\n                    \"Quantity\": \"\",\r\n                    \"sCreationDate\": \"\",\r\n                    \"sDeleteDate\": \"\",\r\n                    \"sLastModifiedDate\": \"\"\r\n                  }\r\n                ],\r\n                \"ItemCategoryCrosssellList\": [\r\n                  {\r\n                    \"CategoryID\": \"\",\r\n                    \"CreationDate\": \"\",\r\n                    \"DeleteDate\": \"\",\r\n                    \"ItemCategoryCrosssellID\": \"\",\r\n                    \"ItemID\": \"\",\r\n                    \"LastModifiedBy\": \"\",\r\n                    \"LastModifiedDate\": \"\",\r\n                    \"Rank\": \"\",\r\n                    \"sCreationDate\": \"\",\r\n                    \"sDeleteDate\": \"\",\r\n                    \"sLastModifiedDate\": \"\"\r\n                  }\r\n                ],\r\n                \"ItemCategoryXrefList\": [\r\n                  {\r\n                    \"CategoryID\": \"\",\r\n                    \"CreationDate\": \"\",\r\n                    \"DeleteDate\": \"\",\r\n                    \"ItemID\": \"\",\r\n                    \"LastModifiedBy\": \"\",\r\n                    \"LastModifiedDate\": \"\",\r\n                    \"sCreationDate\": \"\",\r\n                    \"sDeleteDate\": \"\",\r\n                    \"sLastModifiedDate\": \"\"\r\n                  }\r\n                ],\r\n                \"ItemChannelImageList\": [\r\n                  {\r\n                    \"channelId\": \"\",\r\n                    \"creationDate\": \"\",\r\n                    \"deleteDate\": \"\",\r\n                    \"imageId\": \"\",\r\n                    \"itemId\": \"\",\r\n                    \"lastModifiedBy\": \"\",\r\n                    \"lastModifiedDate\": \"\",\r\n                    \"sCreationDate\": \"\",\r\n                    \"sDeleteDate\": \"\",\r\n                    \"sLastModifiedDate\": \"\"\r\n                  }\r\n                ],\r\n                \"ItemDepartmentXrefList\": [\r\n                  {\r\n                    \"creationDate\": \"\",\r\n                    \"deleteDate\": \"\",\r\n                    \"departmentCode\": \"\",\r\n                    \"itemId\": \"\",\r\n                    \"lastModifiedBy\": \"\",\r\n                    \"lastModifiedDate\": \"\",\r\n                    \"sCreationDate\": \"\",\r\n                    \"sDeleteDate\": \"\",\r\n                    \"sLastModifiedDate\": \"\"\r\n                  }\r\n                ],\r\n                \"ItemDescList\": [\r\n                  {\r\n                    \"CdspDesc\": \"\",\r\n                    \"CreationDate\": \"\",\r\n                    \"DeleteDate\": \"\",\r\n                    \"ImageLabel\": \"\",\r\n                    \"ItemDesc\": \"\",\r\n                    \"ItemID\": \"\",\r\n                    \"LastModifiedBy\": \"\",\r\n                    \"LastModifiedDate\": \"\",\r\n                    \"LocaleID\": \"\",\r\n                    \"Name\": \"\",\r\n                    \"sCreationDate\": \"\",\r\n                    \"sDeleteDate\": \"\",\r\n                    \"sLastModifiedDate\": \"\"\r\n                  }\r\n                ],\r\n                \"ItemID\": \"\",\r\n                \"ItemImageList\": [\r\n                  {\r\n                    \"creationDate\": \"\",\r\n                    \"deleteDate\": \"\",\r\n                    \"fileName\": \"\",\r\n                    \"image\": \"\",\r\n                    \"imageId\": \"\",\r\n                    \"itemId\": \"\",\r\n                    \"lastModifiedBy\": \"\",\r\n                    \"lastModifiedDate\": \"\",\r\n                    \"name\": \"\",\r\n                    \"sCreationDate\": \"\",\r\n                    \"sDeleteDate\": \"\",\r\n                    \"sLastModifiedDate\": \"\",\r\n                    \"typeOfSize\": \"\"\r\n                  }\r\n                ],\r\n                \"ItemImageLocaleXrefList\": [\r\n                  {\r\n                    \"creationDate\": \"\",\r\n                    \"deleteDate\": \"\",\r\n                    \"imageId\": \"\",\r\n                    \"itemId\": \"\",\r\n                    \"lastModifiedBy\": \"\",\r\n                    \"lastModifiedDate\": \"\",\r\n                    \"localeId\": \"\",\r\n                    \"sCreationDate\": \"\",\r\n                    \"sDeleteDate\": \"\",\r\n                    \"sLastModifiedDate\": \"\"\r\n                  }\r\n                ],\r\n                \"ItemInvRules\": {\r\n                  \"CreationDate\": \"\",\r\n                  \"DeleteDate\": \"\",\r\n                  \"ItemID\": \"\",\r\n                  \"ItemInvRulesID\": \"\",\r\n                  \"LastModifiedBy\": \"\",\r\n                  \"LastModifiedDate\": \"\",\r\n                  \"MaximumQuantity\": \"\",\r\n                  \"MinimumQuantity\": \"\",\r\n                  \"PurchaseUnitFactor\": \"\",\r\n                  \"ReorderQuantity\": \"\",\r\n                  \"sCreationDate\": \"\",\r\n                  \"sDeleteDate\": \"\",\r\n                  \"sLastModifiedDate\": \"\"\r\n                },\r\n                \"ItemPTSecondaryAttXrefList\": [\r\n                  {\r\n                    \"CreationDate\": \"\",\r\n                    \"DeleteDate\": \"\",\r\n                    \"ItemID\": \"\",\r\n                    \"LastModifiedBy\": \"\",\r\n                    \"LastModifiedDate\": \"\",\r\n                    \"PTSecondaryAttID\": \"\",\r\n                    \"PTSecondaryAttItemXrefID\": \"\",\r\n                    \"sCreationDate\": \"\",\r\n                    \"sDeleteDate\": \"\",\r\n                    \"sLastModifiedDate\": \"\"\r\n                  }\r\n                ],\r\n                \"ItemPayeeList\": [\r\n                  {\r\n                    \"AccountCode\": \"\",\r\n                    \"CompanyID\": \"\",\r\n                    \"CreationDate\": \"\",\r\n                    \"DeleteDate\": \"\",\r\n                    \"ItemID\": \"\",\r\n                    \"ItemPayeeTenderXrefList\": [\r\n                      {\r\n                        \"CreationDate\": \"\",\r\n                        \"DeleteDate\": \"\",\r\n                        \"ItemPayeeTenderXrefID\": \"\",\r\n                        \"LastModifiedBy\": \"\",\r\n                        \"LastModifiedDate\": \"\",\r\n                        \"PayeeID\": \"\",\r\n                        \"TenderID\": \"\",\r\n                        \"sCreationDate\": \"\",\r\n                        \"sDeleteDate\": \"\",\r\n                        \"sLastModifiedDate\": \"\"\r\n                      }\r\n                    ],\r\n                    \"LastModifiedBy\": \"\",\r\n                    \"LastModifiedDate\": \"\",\r\n                    \"MinPayment\": \"\",\r\n                    \"Payee\": \"\",\r\n                    \"PayeeAccountTypeID\": \"\",\r\n                    \"PayeeID\": \"\",\r\n                    \"sCreationDate\": \"\",\r\n                    \"sDeleteDate\": \"\",\r\n                    \"sLastModifiedDate\": \"\"\r\n                  }\r\n                ],\r\n                \"ItemPhysicalParametersList\": [\r\n                  {\r\n                    \"CreationDate\": \"\",\r\n                    \"DeleteDate\": \"\",\r\n                    \"DimensionUnit\": \"\",\r\n                    \"Height\": \"\",\r\n                    \"ItemID\": \"\",\r\n                    \"ItemPhysicalParametersID\": \"\",\r\n                    \"ItemWeight\": \"\",\r\n                    \"LastModifiedBy\": \"\",\r\n                    \"LastModifiedDate\": \"\",\r\n                    \"Length\": \"\",\r\n                    \"TypeID\": \"\",\r\n                    \"WeightUnit\": \"\",\r\n                    \"Width\": \"\",\r\n                    \"sCreationDate\": \"\",\r\n                    \"sDeleteDate\": \"\",\r\n                    \"sLastModifiedDate\": \"\"\r\n                  }\r\n                ],\r\n                \"ItemPointsDiscountList\": [\r\n                  {\r\n                    \"creationDate\": \"\",\r\n                    \"deleteDate\": \"\",\r\n                    \"discountAmount\": \"\",\r\n                    \"discountType\": \"\",\r\n                    \"endDate\": \"\",\r\n                    \"itemId\": \"\",\r\n                    \"itemPointsDiscountId\": \"\",\r\n                    \"lastModifiedBy\": \"\",\r\n                    \"lastModifiedDate\": \"\",\r\n                    \"loyaltyLevelId\": \"\",\r\n                    \"minimumPoints\": \"\",\r\n                    \"sCreationDate\": \"\",\r\n                    \"sDeleteDate\": \"\",\r\n                    \"sEndDate\": \"\",\r\n                    \"sLastModifiedDate\": \"\",\r\n                    \"sStartDate\": \"\",\r\n                    \"startDate\": \"\"\r\n                  }\r\n                ],\r\n                \"ItemPointsProfileList\": [\r\n                  {\r\n                    \"collectPointsTowardsTotal\": \"\",\r\n                    \"creationDate\": \"\",\r\n                    \"deleteDate\": \"\",\r\n                    \"endDate\": \"\",\r\n                    \"itemId\": \"\",\r\n                    \"itemPointsProfileId\": \"\",\r\n                    \"lastModifiedBy\": \"\",\r\n                    \"lastModifiedDate\": \"\",\r\n                    \"loyaltyLevelId\": \"\",\r\n                    \"perAmount\": \"\",\r\n                    \"pointsEarned\": \"\",\r\n                    \"sCreationDate\": \"\",\r\n                    \"sDeleteDate\": \"\",\r\n                    \"sEndDate\": \"\",\r\n                    \"sLastModifiedDate\": \"\",\r\n                    \"sStartDate\": \"\",\r\n                    \"startDate\": \"\"\r\n                  }\r\n                ],\r\n                \"ItemPriceList\": [\r\n                  {\r\n                    \"AreaID\": \"\",\r\n                    \"ChannelID\": \"\",\r\n                    \"CreationDate\": \"\",\r\n                    \"DeleteDate\": \"\",\r\n                    \"EffectiveDate\": \"\",\r\n                    \"EndDate\": \"\",\r\n                    \"ItemID\": \"\",\r\n                    \"LastModifiedBy\": \"\",\r\n                    \"LastModifiedDate\": \"\",\r\n                    \"ListPrice\": \"\",\r\n                    \"OldSalePrice\": \"\",\r\n                    \"OldWebPrice\": \"\",\r\n                    \"PriceSchemeID\": \"\",\r\n                    \"RegionID\": \"\",\r\n                    \"SalePrice\": \"\",\r\n                    \"StartDate\": \"\",\r\n                    \"StoreNumber\": \"\",\r\n                    \"WebPrice\": \"\",\r\n                    \"sCreationDate\": \"\",\r\n                    \"sDeleteDate\": \"\",\r\n                    \"sEffectiveDate\": \"\",\r\n                    \"sEndDate\": \"\",\r\n                    \"sLastModifiedDate\": \"\",\r\n                    \"sStartDate\": \"\"\r\n                  }\r\n                ],\r\n                \"ItemStatus\": \"\",\r\n                \"ItemSupplierList\": [\r\n                  {\r\n                    \"creationDate\": \"\",\r\n                    \"deleteDate\": \"\",\r\n                    \"itemId\": \"\",\r\n                    \"lastModifiedBy\": \"\",\r\n                    \"lastModifiedDate\": \"\",\r\n                    \"lastPurchaseCost\": \"\",\r\n                    \"rank\": \"\",\r\n                    \"sCreationDate\": \"\",\r\n                    \"sDeleteDate\": \"\",\r\n                    \"sLastModifiedDate\": \"\",\r\n                    \"supplierId\": \"\",\r\n                    \"supplierPlu\": \"\"\r\n                  }\r\n                ],\r\n                \"ItemValueCardXrefList\": [\r\n                  {\r\n                    \"CreationDate\": \"\",\r\n                    \"DeleteDate\": \"\",\r\n                    \"ItemID\": \"\",\r\n                    \"ItemValueCardXrefID\": \"\",\r\n                    \"LastModifiedBy\": \"\",\r\n                    \"LastModifiedDate\": \"\",\r\n                    \"ValueCardTypeID\": \"\",\r\n                    \"sCreationDate\": \"\",\r\n                    \"sDeleteDate\": \"\",\r\n                    \"sLastModifiedDate\": \"\"\r\n                  }\r\n                ],\r\n                \"ItemVariationXrefList\": [\r\n                  {\r\n                    \"creationDate\": \"\",\r\n                    \"deleteDate\": \"\",\r\n                    \"itemId\": \"\",\r\n                    \"lastModifiedBy\": \"\",\r\n                    \"lastModifiedDate\": \"\",\r\n                    \"sCreationDate\": \"\",\r\n                    \"sDeleteDate\": \"\",\r\n                    \"sLastModifiedDate\": \"\",\r\n                    \"variationId\": \"\",\r\n                    \"variationItemXrefId\": \"\"\r\n                  }\r\n                ],\r\n                \"ItemWarrantyList\": [\r\n                  {\r\n                    \"AltTerm\": \"\",\r\n                    \"AltWarrantyPeriodID\": \"\",\r\n                    \"CreationDate\": \"\",\r\n                    \"DeleteDate\": \"\",\r\n                    \"ItemID\": \"\",\r\n                    \"ItemWarrantyID\": \"\",\r\n                    \"LastModifiedBy\": \"\",\r\n                    \"LastModifiedDate\": \"\",\r\n                    \"Term\": \"\",\r\n                    \"WarrantyCoverageID\": \"\",\r\n                    \"WarrantyInfo\": \"\",\r\n                    \"WarrantyPeriodID\": \"\",\r\n                    \"WarrantyType\": \"\",\r\n                    \"sCreationDate\": \"\",\r\n                    \"sDeleteDate\": \"\",\r\n                    \"sLastModifiedDate\": \"\"\r\n                  }\r\n                ],\r\n                \"LastModifiedBy\": \"\",\r\n                \"LastModifiedDate\": \"\",\r\n                \"ListPrice\": \"\",\r\n                \"Make\": \"\",\r\n                \"MeasurementType\": \"\",\r\n                \"MeasurementType2\": \"\",\r\n                \"Model\": \"\",\r\n                \"PLU\": \"\",\r\n                \"PtProductTypeID\": \"\",\r\n                \"SKU\": \"\",\r\n                \"SalePrice\": \"\",\r\n                \"SmallImage\": \"\",\r\n                \"StartDate\": \"\",\r\n                \"UnitName\": \"\",\r\n                \"UnitName2\": \"\",\r\n                \"UnitQty\": \"\",\r\n                \"WebPrice\": \"\",\r\n                \"empReplacementPrice\": \"\",\r\n                \"packageQty\": \"\",\r\n                \"packageSize\": \"\",\r\n                \"sCreationDate\": \"\",\r\n                \"sDeleteDate\": \"\",\r\n                \"sEndDate\": \"\",\r\n                \"sLastModifiedDate\": \"\",\r\n                \"sStartDate\": \"\"\r\n              }\r\n            ],\r\n            \"instructionTypeID\": \"\",\r\n            \"itemId\": \"\",\r\n            \"lastModifiedBy\": \"\",\r\n            \"lastModifiedDate\": \"\",\r\n            \"qty\": \"\",\r\n            \"replacedItemId\": \"\",\r\n            \"replacedQty\": \"\",\r\n            \"sCreationDate\": \"\",\r\n            \"sDeleteDate\": \"\",\r\n            \"sLastModifiedDate\": \"\",\r\n            \"tilQty\": \"\",\r\n            \"total\": \"\",\r\n            \"transLineId\": \"\",\r\n            \"transNumber\": \"\"\r\n          }\r\n        ],\r\n        \"TransItemLinePayeeList\": [\r\n          {\r\n            \"AccountCode\": \"\",\r\n            \"AccountNumber\": \"\",\r\n            \"CreationDate\": \"\",\r\n            \"DeleteDate\": \"\",\r\n            \"InvoiceNumber\": \"\",\r\n            \"ItemPayeeID\": \"\",\r\n            \"LastModifiedBy\": \"\",\r\n            \"LastModifiedDate\": \"\",\r\n            \"MinPayment\": \"\",\r\n            \"Name\": \"\",\r\n            \"NewBalance\": \"\",\r\n            \"OldBalance\": \"\",\r\n            \"Payee\": \"\",\r\n            \"PayeeAccountTypeID\": \"\",\r\n            \"TransItemLinePayeeID\": \"\",\r\n            \"TransLineID\": \"\",\r\n            \"TransNumber\": \"\",\r\n            \"sCreationDate\": \"\",\r\n            \"sDeleteDate\": \"\",\r\n            \"sLastModifiedDate\": \"\"\r\n          }\r\n        ],\r\n        \"TransItemLinePreparationList\": [\r\n          {\r\n            \"creationDate\": \"\",\r\n            \"deleteDate\": \"\",\r\n            \"finishedQty\": \"\",\r\n            \"inProcessQty\": \"\",\r\n            \"lastModifiedBy\": \"\",\r\n            \"lastModifiedDate\": \"\",\r\n            \"objectId\": \"\",\r\n            \"sCreationDate\": \"\",\r\n            \"sDeleteDate\": \"\",\r\n            \"sLastModifiedDate\": \"\",\r\n            \"transLineId\": \"\",\r\n            \"transNumber\": \"\"\r\n          }\r\n        ],\r\n        \"TransItemLineTaxList\": [\r\n          {\r\n            \"CreationDate\": \"\",\r\n            \"DeleteDate\": \"\",\r\n            \"ExemptFlag\": \"\",\r\n            \"ItemID\": \"\",\r\n            \"LastModifiedBy\": \"\",\r\n            \"LastModifiedDate\": \"\",\r\n            \"TaxAmount\": \"\",\r\n            \"TaxID\": \"\",\r\n            \"TaxName\": \"\",\r\n            \"TaxRate\": \"\",\r\n            \"TaxableAmount\": \"\",\r\n            \"TransLineID\": \"\",\r\n            \"TransNumber\": \"\",\r\n            \"sCreationDate\": \"\",\r\n            \"sDeleteDate\": \"\",\r\n            \"sLastModifiedDate\": \"\"\r\n          }\r\n        ],\r\n        \"TransItemLineVariationList\": [\r\n          {\r\n            \"creationDate\": \"\",\r\n            \"deleteDate\": \"\",\r\n            \"lastModifiedBy\": \"\",\r\n            \"lastModifiedDate\": \"\",\r\n            \"sCreationDate\": \"\",\r\n            \"sDeleteDate\": \"\",\r\n            \"sLastModifiedDate\": \"\",\r\n            \"transItemLineVariationId\": \"\",\r\n            \"transLineId\": \"\",\r\n            \"transNumber\": \"\",\r\n            \"variationCode\": \"\"\r\n          }\r\n        ],\r\n        \"TransItemLineWarrantyList\": [\r\n          {\r\n            \"AltTerm\": \"\",\r\n            \"AltWarrantyPeriodID\": \"\",\r\n            \"CreationDate\": \"\",\r\n            \"DeleteDate\": \"\",\r\n            \"ItemWarrantyID\": \"\",\r\n            \"LastModifiedBy\": \"\",\r\n            \"LastModifiedDate\": \"\",\r\n            \"Term\": \"\",\r\n            \"TransItemLineWarrantyID\": \"\",\r\n            \"TransLineID\": \"\",\r\n            \"TransNumber\": \"\",\r\n            \"WarrantyCoverageID\": \"\",\r\n            \"WarrantyInfo\": \"\",\r\n            \"WarrantyPeriodID\": \"\",\r\n            \"WarrantyType\": \"\",\r\n            \"linkedItemName\": \"\",\r\n            \"linkedItemSerialNumber\": \"\",\r\n            \"linkedItemSku\": \"\",\r\n            \"sAltWarrantyPeriod\": \"\",\r\n            \"sCreationDate\": \"\",\r\n            \"sDeleteDate\": \"\",\r\n            \"sLastModifiedDate\": \"\",\r\n            \"sWarrantyCoverage\": \"\",\r\n            \"sWarrantyPeriod\": \"\"\r\n          }\r\n        ],\r\n        \"TransLineID\": \"\",\r\n        \"TransNumber\": \"\",\r\n        \"sCreationDate\": \"\",\r\n        \"sDeleteDate\": \"\",\r\n        \"sLastModifiedDate\": \"\"\r\n      }\r\n    ],\r\n    \"TransItemLoyaltyList\": [\r\n      {\r\n        \"countsTowardRevenue\": \"\",\r\n        \"creationDate\": \"\",\r\n        \"deleteDate\": \"\",\r\n        \"itemId\": \"\",\r\n        \"lastModifiedBy\": \"\",\r\n        \"lastModifiedDate\": \"\",\r\n        \"pointAccumRule\": \"\",\r\n        \"pointsEarned\": \"\",\r\n        \"pointsRedeemed\": \"\",\r\n        \"pointsRefunded\": \"\",\r\n        \"sCreationDate\": \"\",\r\n        \"sDeleteDate\": \"\",\r\n        \"sLastModifiedDate\": \"\",\r\n        \"sku\": \"\",\r\n        \"transNumber\": \"\"\r\n      }\r\n    ],\r\n    \"TransNumber\": \"\",\r\n    \"TransTaxExemptionList\": [\r\n      {\r\n        \"CertificateNumber\": \"\",\r\n        \"CertificateOwnerName\": \"\",\r\n        \"CreationDate\": \"\",\r\n        \"DeleteDate\": \"\",\r\n        \"ExemptLineID\": \"\",\r\n        \"ExemptionAmout\": \"\",\r\n        \"LastModifiedBy\": \"\",\r\n        \"LastModifiedDate\": \"\",\r\n        \"ReasonCode\": \"\",\r\n        \"TaxID\": \"\",\r\n        \"TransNumber\": \"\",\r\n        \"sCreationDate\": \"\",\r\n        \"sDeleteDate\": \"\",\r\n        \"sLastModifiedDate\": \"\"\r\n      }\r\n    ],\r\n    \"TransTenderList\": [\r\n      {\r\n        \"AuthCode\": \"\",\r\n        \"BalancingEventID\": \"\",\r\n        \"BalancingEventTypeID\": \"\",\r\n        \"BankDateTime\": \"\",\r\n        \"BatchNumber\": \"\",\r\n        \"CardLocale\": \"\",\r\n        \"CardNumber\": \"\",\r\n        \"CardType\": \"\",\r\n        \"CreationDate\": \"\",\r\n        \"CurAmount\": \"\",\r\n        \"CurRate\": \"\",\r\n        \"CurrencyID\": \"\",\r\n        \"DeleteDate\": \"\",\r\n        \"ExpiryDate\": \"\",\r\n        \"Gratuity\": \"\",\r\n        \"GratuityRefNumber\": \"\",\r\n        \"KeyUsed\": \"\",\r\n        \"LastModifiedBy\": \"\",\r\n        \"LastModifiedDate\": \"\",\r\n        \"NameOnCard\": \"\",\r\n        \"PinPadID\": \"\",\r\n        \"ProcessedType\": \"\",\r\n        \"RefNumber\": \"\",\r\n        \"RefType\": \"\",\r\n        \"ResponseCode\": \"\",\r\n        \"SettlementDate\": \"\",\r\n        \"TenderAmount\": \"\",\r\n        \"TenderChange\": \"\",\r\n        \"TenderID\": \"\",\r\n        \"TenderLineID\": \"\",\r\n        \"TenderName\": \"\",\r\n        \"TransNumber\": \"\",\r\n        \"Var0Value\": \"\",\r\n        \"Var1Value\": \"\",\r\n        \"Var2Value\": \"\",\r\n        \"Var3Value\": \"\",\r\n        \"Var4Value\": \"\",\r\n        \"sCreationDate\": \"\",\r\n        \"sDeleteDate\": \"\",\r\n        \"sLastModifiedDate\": \"\",\r\n        \"sSettlementDate\": \"\"\r\n      }\r\n    ],\r\n    \"TransactionDiscountList\": [\r\n      {\r\n        \"BaseValue\": \"\",\r\n        \"BeforeTax\": \"\",\r\n        \"CreationDate\": \"\",\r\n        \"DeleteDate\": \"\",\r\n        \"DiscountCode\": \"\",\r\n        \"DiscountDesc\": \"\",\r\n        \"DiscountLineID\": \"\",\r\n        \"DiscountedAmount\": \"\",\r\n        \"DiscountedValue\": \"\",\r\n        \"LastModifiedBy\": \"\",\r\n        \"LastModifiedDate\": \"\",\r\n        \"MaterialID\": \"\",\r\n        \"Percentage\": \"\",\r\n        \"SequenceID\": \"\",\r\n        \"TransNumber\": \"\",\r\n        \"TypeID\": \"\",\r\n        \"sCreationDate\": \"\",\r\n        \"sDeleteDate\": \"\",\r\n        \"sLastModifiedDate\": \"\"\r\n      }\r\n    ],\r\n    \"TransactionTaxList\": [\r\n      {\r\n        \"CreationDate\": \"\",\r\n        \"DeleteDate\": \"\",\r\n        \"ExemptFlag\": \"\",\r\n        \"LastModifiedBy\": \"\",\r\n        \"LastModifiedDate\": \"\",\r\n        \"TaxAmount\": \"\",\r\n        \"TaxID\": \"\",\r\n        \"TaxName\": \"\",\r\n        \"TaxRate\": \"\",\r\n        \"TaxableAmount\": \"\",\r\n        \"TransNumner\": \"\",\r\n        \"TransTaxLineID\": \"\",\r\n        \"sCreationDate\": \"\",\r\n        \"sDeleteDate\": \"\",\r\n        \"sLastModifiedDate\": \"\"\r\n      }\r\n    ],\r\n    \"TypeID\": \"\",\r\n    \"VipNumber\": \"\",\r\n    \"sBusinessDate\": \"\",\r\n    \"sCreationDate\": \"\",\r\n    \"sDeleteDate\": \"\",\r\n    \"sEndDatetime\": \"\",\r\n    \"sLastModifiedDate\": \"\",\r\n    \"sPostingDatetime\": \"\",\r\n    \"sStartDatetime\": \"\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/processTransaction",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"processTransaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SASKTEL_processTransaction",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"retailTransaction\": {\r\n    \"BusinessDate\": \"\",\r\n    \"CashierID\": \"\",\r\n    \"ChannelID\": \"\",\r\n    \"ChannelType\": \"\",\r\n    \"CreationDate\": \"\",\r\n    \"CreditNoteList\": [\r\n      {\r\n        \"AppliedAmount\": \"\",\r\n        \"AppliedTransNum\": \"\",\r\n        \"CreatedBy\": \"\",\r\n        \"CreationDate\": \"\",\r\n        \"CreditAmount\": \"\",\r\n        \"CreditNoteNum\": \"\",\r\n        \"DeleteDate\": \"\",\r\n        \"ExpiryDate\": \"\",\r\n        \"LastModifiedBy\": \"\",\r\n        \"LastModifiedDate\": \"\",\r\n        \"RefundTransNum\": \"\",\r\n        \"Status\": \"\",\r\n        \"StoreNumber\": \"\",\r\n        \"sCreationDate\": \"\",\r\n        \"sDeleteDate\": \"\",\r\n        \"sExpiryDate\": \"\",\r\n        \"sLastModifiedDate\": \"\"\r\n      }\r\n    ],\r\n    \"Customer\": {\r\n      \"AccountID\": \"\",\r\n      \"Address\": {\r\n        \"AddressID\": \"\",\r\n        \"AddressLine1\": \"\",\r\n        \"AddressLine2\": \"\",\r\n        \"City\": \"\",\r\n        \"CountryCode\": \"\",\r\n        \"CreationDate\": \"\",\r\n        \"DeleteDate\": \"\",\r\n        \"LastModifiedBy\": \"\",\r\n        \"LastModifiedDate\": \"\",\r\n        \"PoBox\": \"\",\r\n        \"PostalCode\": \"\",\r\n        \"ProvinceCode\": \"\",\r\n        \"StreetName\": \"\",\r\n        \"StreetNumber\": \"\",\r\n        \"UnitNumber\": \"\",\r\n        \"UnitType\": \"\",\r\n        \"sCreationDate\": \"\",\r\n        \"sDeleteDate\": \"\",\r\n        \"sLastModifiedDate\": \"\"\r\n      },\r\n      \"AddressID\": \"\",\r\n      \"BirthDate\": \"\",\r\n      \"Comments\": \"\",\r\n      \"CompanyName\": \"\",\r\n      \"CreationDate\": \"\",\r\n      \"CustomerID\": \"\",\r\n      \"CustomerNumber\": \"\",\r\n      \"DeleteDate\": \"\",\r\n      \"Department\": \"\",\r\n      \"EmailAddress\": \"\",\r\n      \"FirstName\": \"\",\r\n      \"IsOwner\": \"\",\r\n      \"LastModifiedBy\": \"\",\r\n      \"LastModifiedDate\": \"\",\r\n      \"LastName\": \"\",\r\n      \"MiddleName\": \"\",\r\n      \"ParentID\": \"\",\r\n      \"Status\": \"\",\r\n      \"StoreNumber\": \"\",\r\n      \"Title\": \"\",\r\n      \"Type\": \"\",\r\n      \"customerLoginProfile\": {\r\n        \"CreationDate\": \"\",\r\n        \"DeleteDate\": \"\",\r\n        \"LastModifiedBy\": \"\",\r\n        \"LastModifiedDate\": \"\",\r\n        \"accountId\": \"\",\r\n        \"customerId\": \"\",\r\n        \"firstLoginDate\": \"\",\r\n        \"franchiseeId\": \"\",\r\n        \"franchiseeName\": \"\",\r\n        \"lastModifiedBy\": \"\",\r\n        \"lastPwdChangeDate\": \"\",\r\n        \"numLoginAttemped\": \"\",\r\n        \"phone\": \"\",\r\n        \"posSuperPwd\": \"\",\r\n        \"posSuperUser\": \"\",\r\n        \"pwdExpiryDate\": \"\",\r\n        \"qqId\": \"\",\r\n        \"sCreationDate\": \"\",\r\n        \"sDeleteDate\": \"\",\r\n        \"sLastModifiedDate\": \"\",\r\n        \"tierId\": \"\",\r\n        \"userId\": \"\",\r\n        \"webChatId\": \"\",\r\n        \"webOrderPwd\": \"\"\r\n      },\r\n      \"customerProfileAtts\": [\r\n        {\r\n          \"CreationDate\": \"\",\r\n          \"DeleteDate\": \"\",\r\n          \"LastModifiedBy\": \"\",\r\n          \"LastModifiedDate\": \"\",\r\n          \"TypeID\": \"\",\r\n          \"Var0name\": \"\",\r\n          \"Var0value\": \"\",\r\n          \"Var10name\": \"\",\r\n          \"Var10value\": \"\",\r\n          \"Var11name\": \"\",\r\n          \"Var11value\": \"\",\r\n          \"Var12name\": \"\",\r\n          \"Var12value\": \"\",\r\n          \"Var13name\": \"\",\r\n          \"Var13value\": \"\",\r\n          \"Var14name\": \"\",\r\n          \"Var14value\": \"\",\r\n          \"Var1name\": \"\",\r\n          \"Var1value\": \"\",\r\n          \"Var2name\": \"\",\r\n          \"Var2value\": \"\",\r\n          \"Var3name\": \"\",\r\n          \"Var3value\": \"\",\r\n          \"Var4name\": \"\",\r\n          \"Var4value\": \"\",\r\n          \"Var5name\": \"\",\r\n          \"Var5value\": \"\",\r\n          \"Var6name\": \"\",\r\n          \"Var6value\": \"\",\r\n          \"Var7name\": \"\",\r\n          \"Var7value\": \"\",\r\n          \"Var8name\": \"\",\r\n          \"Var8value\": \"\",\r\n          \"Var9name\": \"\",\r\n          \"Var9value\": \"\",\r\n          \"sCreationDate\": \"\",\r\n          \"sDeleteDate\": \"\",\r\n          \"sLastModifiedDate\": \"\"\r\n        }\r\n      ],\r\n      \"membershipProfile\": {\r\n        \"creationDate\": \"\",\r\n        \"customerId\": \"\",\r\n        \"deleteDate\": \"\",\r\n        \"lastModifiedBy\": \"\",\r\n        \"lastModifiedDate\": \"\",\r\n        \"membershipNumber\": \"\",\r\n        \"pointsAccumulated\": \"\",\r\n        \"pointsBalance\": \"\",\r\n        \"purchasesAccumulated\": \"\",\r\n        \"sCreationDate\": \"\",\r\n        \"sDeleteDate\": \"\",\r\n        \"sLastModifiedDate\": \"\"\r\n      },\r\n      \"phoneList\": [\r\n        {\r\n          \"AreaCode\": \"\",\r\n          \"CountryCode\": \"\",\r\n          \"CreationDate\": \"\",\r\n          \"CustomerID\": \"\",\r\n          \"DeleteDate\": \"\",\r\n          \"Ext\": \"\",\r\n          \"IntlDialPrefix\": \"\",\r\n          \"LastModifiedBy\": \"\",\r\n          \"LastModifiedDate\": \"\",\r\n          \"Number\": \"\",\r\n          \"PhoneID\": \"\",\r\n          \"Type\": \"\",\r\n          \"sCreationDate\": \"\",\r\n          \"sDeleteDate\": \"\",\r\n          \"sLastModifiedDate\": \"\"\r\n        }\r\n      ],\r\n      \"sBirthDate\": \"\",\r\n      \"sCreationDate\": \"\",\r\n      \"sDeleteDate\": \"\",\r\n      \"sLastModifiedDate\": \"\"\r\n    },\r\n    \"CustomerID\": \"\",\r\n    \"CustomerRefNum1\": \"\",\r\n    \"CustomerRefNum2\": \"\",\r\n    \"DeleteDate\": \"\",\r\n    \"DepartmentID\": \"\",\r\n    \"EndDatetime\": \"\",\r\n    \"FirstName\": \"\",\r\n    \"KeyIndex\": \"\",\r\n    \"LastModifiedBy\": \"\",\r\n    \"LastModifiedDate\": \"\",\r\n    \"LastName\": \"\",\r\n    \"PhoneNumber\": \"\",\r\n    \"PostingDatetime\": \"\",\r\n    \"RestaurantTransactionList\": [\r\n      {\r\n        \"arrivalTime\": \"\",\r\n        \"completionTime\": \"\",\r\n        \"creationDate\": \"\",\r\n        \"customerName\": \"\",\r\n        \"deleteDate\": \"\",\r\n        \"gratuity\": \"\",\r\n        \"gratuityPaymentType\": \"\",\r\n        \"lastModifiedBy\": \"\",\r\n        \"lastModifiedDate\": \"\",\r\n        \"mealCompletionTime\": \"\",\r\n        \"mealStartTime\": \"\",\r\n        \"numberItem\": \"\",\r\n        \"numberOfGuest\": \"\",\r\n        \"orderNumber\": \"\",\r\n        \"reservationId\": \"\",\r\n        \"sArrivalTime\": \"\",\r\n        \"sCompletionTime\": \"\",\r\n        \"sCreationDate\": \"\",\r\n        \"sDeleteDate\": \"\",\r\n        \"sLastModifiedDate\": \"\",\r\n        \"sMealCompletionTime\": \"\",\r\n        \"sMealStartTime\": \"\",\r\n        \"sSeatingTime\": \"\",\r\n        \"sTenderTime\": \"\",\r\n        \"seatingTime\": \"\",\r\n        \"serviceCharge\": \"\",\r\n        \"status\": \"\",\r\n        \"tableNumber\": \"\",\r\n        \"taxableAmt\": \"\",\r\n        \"tenderTime\": \"\",\r\n        \"transNumber\": \"\",\r\n        \"type\": \"\"\r\n      }\r\n    ],\r\n    \"RetailTransAttList\": [\r\n      {\r\n        \"AttLineID\": \"\",\r\n        \"CreationDate\": \"\",\r\n        \"DeleteDate\": \"\",\r\n        \"LastModifiedBy\": \"\",\r\n        \"LastModifiedDate\": \"\",\r\n        \"TransNumber\": \"\",\r\n        \"Var0name\": \"\",\r\n        \"Var0value\": \"\",\r\n        \"Var1name\": \"\",\r\n        \"Var1value\": \"\",\r\n        \"Var2name\": \"\",\r\n        \"Var2value\": \"\",\r\n        \"Var3name\": \"\",\r\n        \"Var3value\": \"\",\r\n        \"Var4name\": \"\",\r\n        \"Var4value\": \"\",\r\n        \"Var5name\": \"\",\r\n        \"Var5value\": \"\",\r\n        \"Var6name\": \"\",\r\n        \"Var6value\": \"\",\r\n        \"Var7name\": \"\",\r\n        \"Var7value\": \"\",\r\n        \"Var8name\": \"\",\r\n        \"Var8value\": \"\",\r\n        \"Var9name\": \"\",\r\n        \"Var9value\": \"\",\r\n        \"key\": \"\",\r\n        \"obj\": \"\",\r\n        \"sCreationDate\": \"\",\r\n        \"sDeleteDate\": \"\",\r\n        \"sLastModifiedDate\": \"\"\r\n      }\r\n    ],\r\n    \"RetailTransactionLoyalty\": {\r\n      \"creationDate\": \"\",\r\n      \"currentLoyaltyLevelName\": \"\",\r\n      \"customerId\": \"\",\r\n      \"deleteDate\": \"\",\r\n      \"lastModifiedBy\": \"\",\r\n      \"lastModifiedDate\": \"\",\r\n      \"membershipNumber\": \"\",\r\n      \"newPointsBalance\": \"\",\r\n      \"nextLoyaltyLevelName\": \"\",\r\n      \"nextVisitMemberDiscount\": \"\",\r\n      \"pointAccomRuleRevenue\": \"\",\r\n      \"pointAccumRulePromo\": \"\",\r\n      \"pointsEarnedAllProducts\": \"\",\r\n      \"pointsEarnedRevenue\": \"\",\r\n      \"pointsEarnedTotal\": \"\",\r\n      \"pointsRedeemdVIP\": \"\",\r\n      \"pointsRedeemedAllProducts\": \"\",\r\n      \"pointsRefunded\": \"\",\r\n      \"previousPointsBalance\": \"\",\r\n      \"qualifiedRevenueAmount\": \"\",\r\n      \"qualifiedTotalAmount\": \"\",\r\n      \"sCreationDate\": \"\",\r\n      \"sDeleteDate\": \"\",\r\n      \"sLastModifiedDate\": \"\",\r\n      \"savedAmount\": \"\",\r\n      \"transNumber\": \"\"\r\n    },\r\n    \"SalesPersonID\": \"\",\r\n    \"SendState\": \"\",\r\n    \"StartDatetime\": \"\",\r\n    \"Status\": \"\",\r\n    \"StoreNumber\": \"\",\r\n    \"Subtotal\": \"\",\r\n    \"TaxableTotal\": \"\",\r\n    \"TerminalID\": \"\",\r\n    \"Total\": \"\",\r\n    \"TotalItems\": \"\",\r\n    \"TotalTax\": \"\",\r\n    \"TransCouponGiftCertList\": [\r\n      {\r\n        \"appliedAmount\": \"\",\r\n        \"certificateId\": \"\",\r\n        \"creationDate\": \"\",\r\n        \"deleteDate\": \"\",\r\n        \"lastModifiedBy\": \"\",\r\n        \"lastModifiedDate\": \"\",\r\n        \"sCreationDate\": \"\",\r\n        \"sDeleteDate\": \"\",\r\n        \"sLastModifiedDate\": \"\",\r\n        \"sequenceId\": \"\",\r\n        \"serialNumber\": \"\",\r\n        \"transNumber\": \"\",\r\n        \"value\": \"\"\r\n      }\r\n    ],\r\n    \"TransEventList\": [\r\n      {\r\n        \"CreationDate\": \"\",\r\n        \"DeleteDate\": \"\",\r\n        \"LastModifiedBy\": \"\",\r\n        \"LastModifiedDate\": \"\",\r\n        \"TransEventDesc\": \"\",\r\n        \"TransEventLineID\": \"\",\r\n        \"TransEventTime\": \"\",\r\n        \"TransEventTypeID\": \"\",\r\n        \"TransLineID\": \"\",\r\n        \"TransNumber\": \"\",\r\n        \"UserID\": \"\",\r\n        \"Var0Name\": \"\",\r\n        \"Var0Value\": \"\",\r\n        \"Var1Name\": \"\",\r\n        \"Var1Value\": \"\",\r\n        \"Var2Name\": \"\",\r\n        \"Var2Value\": \"\",\r\n        \"Var3Name\": \"\",\r\n        \"Var3Value\": \"\",\r\n        \"Var4Name\": \"\",\r\n        \"Var4Value\": \"\",\r\n        \"Var5Name\": \"\",\r\n        \"Var5Value\": \"\",\r\n        \"Var6Name\": \"\",\r\n        \"Var6Value\": \"\",\r\n        \"Var7Name\": \"\",\r\n        \"Var7Value\": \"\",\r\n        \"Var8Name\": \"\",\r\n        \"Var8Value\": \"\",\r\n        \"Var9Name\": \"\",\r\n        \"Var9Value\": \"\",\r\n        \"sCreationDate\": \"\",\r\n        \"sDeleteDate\": \"\",\r\n        \"sLastModifiedDate\": \"\",\r\n        \"sTransEventTime\": \"\"\r\n      }\r\n    ],\r\n    \"TransItemLineList\": [\r\n      {\r\n        \"ChannelID\": \"\",\r\n        \"ChannelType\": \"\",\r\n        \"Comments\": \"\",\r\n        \"Cost\": \"\",\r\n        \"CreationDate\": \"\",\r\n        \"DeleteDate\": \"\",\r\n        \"EndOfLife\": \"\",\r\n        \"IsDispListAtPos\": \"\",\r\n        \"ItemDesc\": \"\",\r\n        \"ItemID\": \"\",\r\n        \"ItemType\": \"\",\r\n        \"LastModifiedBy\": \"\",\r\n        \"LastModifiedDate\": \"\",\r\n        \"LineSubType\": \"\",\r\n        \"LineType\": \"\",\r\n        \"ListPrice\": \"\",\r\n        \"Make\": \"\",\r\n        \"ManufacturerName\": \"\",\r\n        \"Model\": \"\",\r\n        \"PLU\": \"\",\r\n        \"PriceSchemeID\": \"\",\r\n        \"QTY\": \"\",\r\n        \"ReceiptDisplayOrder\": \"\",\r\n        \"SalePrice\": \"\",\r\n        \"SalesPersonID\": \"\",\r\n        \"SerialNum\": \"\",\r\n        \"SoldPrice\": \"\",\r\n        \"SoldPriceTax\": \"\",\r\n        \"SoldPriceTotal\": \"\",\r\n        \"TransCommentList\": [\r\n          {\r\n            \"comment\": \"\",\r\n            \"creationDate\": \"\",\r\n            \"deleteDate\": \"\",\r\n            \"lastModifiedBy\": \"\",\r\n            \"lastModifiedDate\": \"\",\r\n            \"sCreationDate\": \"\",\r\n            \"sDeleteDate\": \"\",\r\n            \"sLastModifiedDate\": \"\",\r\n            \"transLineId\": \"\",\r\n            \"transNumber\": \"\",\r\n            \"type\": \"\"\r\n          }\r\n        ],\r\n        \"TransItemLineActivationList\": [\r\n          {\r\n            \"ActivationDate\": \"\",\r\n            \"ActivationDiscount\": \"\",\r\n            \"ActivationFee\": \"\",\r\n            \"ActivationLineID\": \"\",\r\n            \"Ban\": \"\",\r\n            \"BanType\": \"\",\r\n            \"CreationDate\": \"\",\r\n            \"DeleteDate\": \"\",\r\n            \"Deposit\": \"\",\r\n            \"InvoicePaymentType\": \"\",\r\n            \"LastModifiedBy\": \"\",\r\n            \"LastModifiedDate\": \"\",\r\n            \"MobileNumber\": \"\",\r\n            \"PricePlan\": \"\",\r\n            \"RefNumber\": \"\",\r\n            \"SerialNumber\": \"\",\r\n            \"SubscriberID\": \"\",\r\n            \"Term\": \"\",\r\n            \"TransLineID\": \"\",\r\n            \"TransNumber\": \"\",\r\n            \"TransactionIdentifier\": \"\",\r\n            \"sActivationDate\": \"\",\r\n            \"sCreationDate\": \"\",\r\n            \"sDeleteDate\": \"\",\r\n            \"sLastModifiedDate\": \"\"\r\n          }\r\n        ],\r\n        \"TransItemLineAttList\": [\r\n          {\r\n            \"CreationDate\": \"\",\r\n            \"DeleteDate\": \"\",\r\n            \"ItemID\": \"\",\r\n            \"LastModifiedBy\": \"\",\r\n            \"LastModifiedDate\": \"\",\r\n            \"LineExt\": \"\",\r\n            \"TransLineID\": \"\",\r\n            \"TrasnNumber\": \"\",\r\n            \"TypeID\": \"\",\r\n            \"Var0name\": \"\",\r\n            \"Var0value\": \"\",\r\n            \"Var1name\": \"\",\r\n            \"Var1value\": \"\",\r\n            \"Var2name\": \"\",\r\n            \"Var2value\": \"\",\r\n            \"Var3name\": \"\",\r\n            \"Var3value\": \"\",\r\n            \"Var4name\": \"\",\r\n            \"Var4value\": \"\",\r\n            \"Var5name\": \"\",\r\n            \"Var5value\": \"\",\r\n            \"Var6name\": \"\",\r\n            \"Var6value\": \"\",\r\n            \"Var7name\": \"\",\r\n            \"Var7value\": \"\",\r\n            \"Var8name\": \"\",\r\n            \"Var8value\": \"\",\r\n            \"Var9name\": \"\",\r\n            \"Var9value\": \"\",\r\n            \"sCreationDate\": \"\",\r\n            \"sDeleteDate\": \"\",\r\n            \"sLastModifiedDate\": \"\"\r\n          }\r\n        ],\r\n        \"TransItemLineComboList\": [\r\n          {\r\n            \"additionalPrice\": \"\",\r\n            \"creationDate\": \"\",\r\n            \"deleteDate\": \"\",\r\n            \"lastModifiedBy\": \"\",\r\n            \"lastModifiedDate\": \"\",\r\n            \"parentTransLineId\": \"\",\r\n            \"sCreationDate\": \"\",\r\n            \"sDeleteDate\": \"\",\r\n            \"sLastModifiedDate\": \"\",\r\n            \"showSequence\": \"\",\r\n            \"transLineId\": \"\",\r\n            \"transNumber\": \"\"\r\n          }\r\n        ],\r\n        \"TransItemLineDiscountList\": [\r\n          {\r\n            \"BaseValue\": \"\",\r\n            \"CreationDate\": \"\",\r\n            \"DeleteDate\": \"\",\r\n            \"DiscountCode\": \"\",\r\n            \"DiscountLineID\": \"\",\r\n            \"DiscountedAmount\": \"\",\r\n            \"LastModifiedBy\": \"\",\r\n            \"LastModifiedDate\": \"\",\r\n            \"MaterialID\": \"\",\r\n            \"OverrideAmount\": \"\",\r\n            \"Percentage\": \"\",\r\n            \"PromSchemeID\": \"\",\r\n            \"ReasonCode\": \"\",\r\n            \"SalePrice\": \"\",\r\n            \"TransLineNumber\": \"\",\r\n            \"TransNumber\": \"\",\r\n            \"TypeID\": \"\",\r\n            \"sCreationDate\": \"\",\r\n            \"sDeleteDate\": \"\",\r\n            \"sLastModifiedDate\": \"\"\r\n          }\r\n        ],\r\n        \"TransItemLineInstructionList\": [\r\n          {\r\n            \"additionalPrice\": \"\",\r\n            \"baseItemId\": \"\",\r\n            \"cost\": \"\",\r\n            \"creationDate\": \"\",\r\n            \"deleteDate\": \"\",\r\n            \"description\": \"\",\r\n            \"instructionId\": \"\",\r\n            \"instructionItemList\": [\r\n              {\r\n                \"Cost\": \"\",\r\n                \"CreationDate\": \"\",\r\n                \"CurrencyID\": \"\",\r\n                \"DeleteDate\": \"\",\r\n                \"EndDate\": \"\",\r\n                \"EndOfLife\": \"\",\r\n                \"IsDispListAtPOS\": \"\",\r\n                \"ItemAttList\": [\r\n                  {\r\n                    \"CreationDate\": \"\",\r\n                    \"DeleteDate\": \"\",\r\n                    \"ItemID\": \"\",\r\n                    \"LastModifiedBy\": \"\",\r\n                    \"LastModifiedDate\": \"\",\r\n                    \"TypeID\": \"\",\r\n                    \"Var0Name\": \"\",\r\n                    \"Var0Value\": \"\",\r\n                    \"Var1Name\": \"\",\r\n                    \"Var1Value\": \"\",\r\n                    \"Var2Name\": \"\",\r\n                    \"Var2Value\": \"\",\r\n                    \"Var3Name\": \"\",\r\n                    \"Var3Value\": \"\",\r\n                    \"Var4Name\": \"\",\r\n                    \"Var4Value\": \"\",\r\n                    \"sCreationDate\": \"\",\r\n                    \"sDeleteDate\": \"\",\r\n                    \"sLastModifiedDate\": \"\"\r\n                  }\r\n                ],\r\n                \"ItemAttMaximList\": [\r\n                  {\r\n                    \"actionCode\": \"\",\r\n                    \"activeProd\": \"\",\r\n                    \"autoRtn\": \"\",\r\n                    \"creationDate\": \"\",\r\n                    \"deleteDate\": \"\",\r\n                    \"discProd\": \"\",\r\n                    \"forceModif\": \"\",\r\n                    \"gstRate\": \"\",\r\n                    \"instantScan\": \"\",\r\n                    \"itemGrpCode\": \"\",\r\n                    \"itemId\": \"\",\r\n                    \"lastModifiedBy\": \"\",\r\n                    \"lastModifiedDate\": \"\",\r\n                    \"lkpFlag\": \"\",\r\n                    \"nCakeSale\": \"\",\r\n                    \"openPrice\": \"\",\r\n                    \"preOrder\": \"\",\r\n                    \"reserved\": \"\",\r\n                    \"sCreationDate\": \"\",\r\n                    \"sDeleteDate\": \"\",\r\n                    \"sLastModifiedDate\": \"\",\r\n                    \"serviceChg\": \"\",\r\n                    \"setMenu\": \"\",\r\n                    \"takeaway\": \"\",\r\n                    \"unitBase\": \"\"\r\n                  }\r\n                ],\r\n                \"ItemBundleList\": [\r\n                  {\r\n                    \"ChildItemID\": \"\",\r\n                    \"CreationDate\": \"\",\r\n                    \"DeleteDate\": \"\",\r\n                    \"ItemID\": \"\",\r\n                    \"LastModifiedBy\": \"\",\r\n                    \"LastModifiedDate\": \"\",\r\n                    \"Quantity\": \"\",\r\n                    \"sCreationDate\": \"\",\r\n                    \"sDeleteDate\": \"\",\r\n                    \"sLastModifiedDate\": \"\"\r\n                  }\r\n                ],\r\n                \"ItemCategoryCrosssellList\": [\r\n                  {\r\n                    \"CategoryID\": \"\",\r\n                    \"CreationDate\": \"\",\r\n                    \"DeleteDate\": \"\",\r\n                    \"ItemCategoryCrosssellID\": \"\",\r\n                    \"ItemID\": \"\",\r\n                    \"LastModifiedBy\": \"\",\r\n                    \"LastModifiedDate\": \"\",\r\n                    \"Rank\": \"\",\r\n                    \"sCreationDate\": \"\",\r\n                    \"sDeleteDate\": \"\",\r\n                    \"sLastModifiedDate\": \"\"\r\n                  }\r\n                ],\r\n                \"ItemCategoryXrefList\": [\r\n                  {\r\n                    \"CategoryID\": \"\",\r\n                    \"CreationDate\": \"\",\r\n                    \"DeleteDate\": \"\",\r\n                    \"ItemID\": \"\",\r\n                    \"LastModifiedBy\": \"\",\r\n                    \"LastModifiedDate\": \"\",\r\n                    \"sCreationDate\": \"\",\r\n                    \"sDeleteDate\": \"\",\r\n                    \"sLastModifiedDate\": \"\"\r\n                  }\r\n                ],\r\n                \"ItemChannelImageList\": [\r\n                  {\r\n                    \"channelId\": \"\",\r\n                    \"creationDate\": \"\",\r\n                    \"deleteDate\": \"\",\r\n                    \"imageId\": \"\",\r\n                    \"itemId\": \"\",\r\n                    \"lastModifiedBy\": \"\",\r\n                    \"lastModifiedDate\": \"\",\r\n                    \"sCreationDate\": \"\",\r\n                    \"sDeleteDate\": \"\",\r\n                    \"sLastModifiedDate\": \"\"\r\n                  }\r\n                ],\r\n                \"ItemDepartmentXrefList\": [\r\n                  {\r\n                    \"creationDate\": \"\",\r\n                    \"deleteDate\": \"\",\r\n                    \"departmentCode\": \"\",\r\n                    \"itemId\": \"\",\r\n                    \"lastModifiedBy\": \"\",\r\n                    \"lastModifiedDate\": \"\",\r\n                    \"sCreationDate\": \"\",\r\n                    \"sDeleteDate\": \"\",\r\n                    \"sLastModifiedDate\": \"\"\r\n                  }\r\n                ],\r\n                \"ItemDescList\": [\r\n                  {\r\n                    \"CdspDesc\": \"\",\r\n                    \"CreationDate\": \"\",\r\n                    \"DeleteDate\": \"\",\r\n                    \"ImageLabel\": \"\",\r\n                    \"ItemDesc\": \"\",\r\n                    \"ItemID\": \"\",\r\n                    \"LastModifiedBy\": \"\",\r\n                    \"LastModifiedDate\": \"\",\r\n                    \"LocaleID\": \"\",\r\n                    \"Name\": \"\",\r\n                    \"sCreationDate\": \"\",\r\n                    \"sDeleteDate\": \"\",\r\n                    \"sLastModifiedDate\": \"\"\r\n                  }\r\n                ],\r\n                \"ItemID\": \"\",\r\n                \"ItemImageList\": [\r\n                  {\r\n                    \"creationDate\": \"\",\r\n                    \"deleteDate\": \"\",\r\n                    \"fileName\": \"\",\r\n                    \"image\": \"\",\r\n                    \"imageId\": \"\",\r\n                    \"itemId\": \"\",\r\n                    \"lastModifiedBy\": \"\",\r\n                    \"lastModifiedDate\": \"\",\r\n                    \"name\": \"\",\r\n                    \"sCreationDate\": \"\",\r\n                    \"sDeleteDate\": \"\",\r\n                    \"sLastModifiedDate\": \"\",\r\n                    \"typeOfSize\": \"\"\r\n                  }\r\n                ],\r\n                \"ItemImageLocaleXrefList\": [\r\n                  {\r\n                    \"creationDate\": \"\",\r\n                    \"deleteDate\": \"\",\r\n                    \"imageId\": \"\",\r\n                    \"itemId\": \"\",\r\n                    \"lastModifiedBy\": \"\",\r\n                    \"lastModifiedDate\": \"\",\r\n                    \"localeId\": \"\",\r\n                    \"sCreationDate\": \"\",\r\n                    \"sDeleteDate\": \"\",\r\n                    \"sLastModifiedDate\": \"\"\r\n                  }\r\n                ],\r\n                \"ItemInvRules\": {\r\n                  \"CreationDate\": \"\",\r\n                  \"DeleteDate\": \"\",\r\n                  \"ItemID\": \"\",\r\n                  \"ItemInvRulesID\": \"\",\r\n                  \"LastModifiedBy\": \"\",\r\n                  \"LastModifiedDate\": \"\",\r\n                  \"MaximumQuantity\": \"\",\r\n                  \"MinimumQuantity\": \"\",\r\n                  \"PurchaseUnitFactor\": \"\",\r\n                  \"ReorderQuantity\": \"\",\r\n                  \"sCreationDate\": \"\",\r\n                  \"sDeleteDate\": \"\",\r\n                  \"sLastModifiedDate\": \"\"\r\n                },\r\n                \"ItemPTSecondaryAttXrefList\": [\r\n                  {\r\n                    \"CreationDate\": \"\",\r\n                    \"DeleteDate\": \"\",\r\n                    \"ItemID\": \"\",\r\n                    \"LastModifiedBy\": \"\",\r\n                    \"LastModifiedDate\": \"\",\r\n                    \"PTSecondaryAttID\": \"\",\r\n                    \"PTSecondaryAttItemXrefID\": \"\",\r\n                    \"sCreationDate\": \"\",\r\n                    \"sDeleteDate\": \"\",\r\n                    \"sLastModifiedDate\": \"\"\r\n                  }\r\n                ],\r\n                \"ItemPayeeList\": [\r\n                  {\r\n                    \"AccountCode\": \"\",\r\n                    \"CompanyID\": \"\",\r\n                    \"CreationDate\": \"\",\r\n                    \"DeleteDate\": \"\",\r\n                    \"ItemID\": \"\",\r\n                    \"ItemPayeeTenderXrefList\": [\r\n                      {\r\n                        \"CreationDate\": \"\",\r\n                        \"DeleteDate\": \"\",\r\n                        \"ItemPayeeTenderXrefID\": \"\",\r\n                        \"LastModifiedBy\": \"\",\r\n                        \"LastModifiedDate\": \"\",\r\n                        \"PayeeID\": \"\",\r\n                        \"TenderID\": \"\",\r\n                        \"sCreationDate\": \"\",\r\n                        \"sDeleteDate\": \"\",\r\n                        \"sLastModifiedDate\": \"\"\r\n                      }\r\n                    ],\r\n                    \"LastModifiedBy\": \"\",\r\n                    \"LastModifiedDate\": \"\",\r\n                    \"MinPayment\": \"\",\r\n                    \"Payee\": \"\",\r\n                    \"PayeeAccountTypeID\": \"\",\r\n                    \"PayeeID\": \"\",\r\n                    \"sCreationDate\": \"\",\r\n                    \"sDeleteDate\": \"\",\r\n                    \"sLastModifiedDate\": \"\"\r\n                  }\r\n                ],\r\n                \"ItemPhysicalParametersList\": [\r\n                  {\r\n                    \"CreationDate\": \"\",\r\n                    \"DeleteDate\": \"\",\r\n                    \"DimensionUnit\": \"\",\r\n                    \"Height\": \"\",\r\n                    \"ItemID\": \"\",\r\n                    \"ItemPhysicalParametersID\": \"\",\r\n                    \"ItemWeight\": \"\",\r\n                    \"LastModifiedBy\": \"\",\r\n                    \"LastModifiedDate\": \"\",\r\n                    \"Length\": \"\",\r\n                    \"TypeID\": \"\",\r\n                    \"WeightUnit\": \"\",\r\n                    \"Width\": \"\",\r\n                    \"sCreationDate\": \"\",\r\n                    \"sDeleteDate\": \"\",\r\n                    \"sLastModifiedDate\": \"\"\r\n                  }\r\n                ],\r\n                \"ItemPointsDiscountList\": [\r\n                  {\r\n                    \"creationDate\": \"\",\r\n                    \"deleteDate\": \"\",\r\n                    \"discountAmount\": \"\",\r\n                    \"discountType\": \"\",\r\n                    \"endDate\": \"\",\r\n                    \"itemId\": \"\",\r\n                    \"itemPointsDiscountId\": \"\",\r\n                    \"lastModifiedBy\": \"\",\r\n                    \"lastModifiedDate\": \"\",\r\n                    \"loyaltyLevelId\": \"\",\r\n                    \"minimumPoints\": \"\",\r\n                    \"sCreationDate\": \"\",\r\n                    \"sDeleteDate\": \"\",\r\n                    \"sEndDate\": \"\",\r\n                    \"sLastModifiedDate\": \"\",\r\n                    \"sStartDate\": \"\",\r\n                    \"startDate\": \"\"\r\n                  }\r\n                ],\r\n                \"ItemPointsProfileList\": [\r\n                  {\r\n                    \"collectPointsTowardsTotal\": \"\",\r\n                    \"creationDate\": \"\",\r\n                    \"deleteDate\": \"\",\r\n                    \"endDate\": \"\",\r\n                    \"itemId\": \"\",\r\n                    \"itemPointsProfileId\": \"\",\r\n                    \"lastModifiedBy\": \"\",\r\n                    \"lastModifiedDate\": \"\",\r\n                    \"loyaltyLevelId\": \"\",\r\n                    \"perAmount\": \"\",\r\n                    \"pointsEarned\": \"\",\r\n                    \"sCreationDate\": \"\",\r\n                    \"sDeleteDate\": \"\",\r\n                    \"sEndDate\": \"\",\r\n                    \"sLastModifiedDate\": \"\",\r\n                    \"sStartDate\": \"\",\r\n                    \"startDate\": \"\"\r\n                  }\r\n                ],\r\n                \"ItemPriceList\": [\r\n                  {\r\n                    \"AreaID\": \"\",\r\n                    \"ChannelID\": \"\",\r\n                    \"CreationDate\": \"\",\r\n                    \"DeleteDate\": \"\",\r\n                    \"EffectiveDate\": \"\",\r\n                    \"EndDate\": \"\",\r\n                    \"ItemID\": \"\",\r\n                    \"LastModifiedBy\": \"\",\r\n                    \"LastModifiedDate\": \"\",\r\n                    \"ListPrice\": \"\",\r\n                    \"OldSalePrice\": \"\",\r\n                    \"OldWebPrice\": \"\",\r\n                    \"PriceSchemeID\": \"\",\r\n                    \"RegionID\": \"\",\r\n                    \"SalePrice\": \"\",\r\n                    \"StartDate\": \"\",\r\n                    \"StoreNumber\": \"\",\r\n                    \"WebPrice\": \"\",\r\n                    \"sCreationDate\": \"\",\r\n                    \"sDeleteDate\": \"\",\r\n                    \"sEffectiveDate\": \"\",\r\n                    \"sEndDate\": \"\",\r\n                    \"sLastModifiedDate\": \"\",\r\n                    \"sStartDate\": \"\"\r\n                  }\r\n                ],\r\n                \"ItemStatus\": \"\",\r\n                \"ItemSupplierList\": [\r\n                  {\r\n                    \"creationDate\": \"\",\r\n                    \"deleteDate\": \"\",\r\n                    \"itemId\": \"\",\r\n                    \"lastModifiedBy\": \"\",\r\n                    \"lastModifiedDate\": \"\",\r\n                    \"lastPurchaseCost\": \"\",\r\n                    \"rank\": \"\",\r\n                    \"sCreationDate\": \"\",\r\n                    \"sDeleteDate\": \"\",\r\n                    \"sLastModifiedDate\": \"\",\r\n                    \"supplierId\": \"\",\r\n                    \"supplierPlu\": \"\"\r\n                  }\r\n                ],\r\n                \"ItemValueCardXrefList\": [\r\n                  {\r\n                    \"CreationDate\": \"\",\r\n                    \"DeleteDate\": \"\",\r\n                    \"ItemID\": \"\",\r\n                    \"ItemValueCardXrefID\": \"\",\r\n                    \"LastModifiedBy\": \"\",\r\n                    \"LastModifiedDate\": \"\",\r\n                    \"ValueCardTypeID\": \"\",\r\n                    \"sCreationDate\": \"\",\r\n                    \"sDeleteDate\": \"\",\r\n                    \"sLastModifiedDate\": \"\"\r\n                  }\r\n                ],\r\n                \"ItemVariationXrefList\": [\r\n                  {\r\n                    \"creationDate\": \"\",\r\n                    \"deleteDate\": \"\",\r\n                    \"itemId\": \"\",\r\n                    \"lastModifiedBy\": \"\",\r\n                    \"lastModifiedDate\": \"\",\r\n                    \"sCreationDate\": \"\",\r\n                    \"sDeleteDate\": \"\",\r\n                    \"sLastModifiedDate\": \"\",\r\n                    \"variationId\": \"\",\r\n                    \"variationItemXrefId\": \"\"\r\n                  }\r\n                ],\r\n                \"ItemWarrantyList\": [\r\n                  {\r\n                    \"AltTerm\": \"\",\r\n                    \"AltWarrantyPeriodID\": \"\",\r\n                    \"CreationDate\": \"\",\r\n                    \"DeleteDate\": \"\",\r\n                    \"ItemID\": \"\",\r\n                    \"ItemWarrantyID\": \"\",\r\n                    \"LastModifiedBy\": \"\",\r\n                    \"LastModifiedDate\": \"\",\r\n                    \"Term\": \"\",\r\n                    \"WarrantyCoverageID\": \"\",\r\n                    \"WarrantyInfo\": \"\",\r\n                    \"WarrantyPeriodID\": \"\",\r\n                    \"WarrantyType\": \"\",\r\n                    \"sCreationDate\": \"\",\r\n                    \"sDeleteDate\": \"\",\r\n                    \"sLastModifiedDate\": \"\"\r\n                  }\r\n                ],\r\n                \"LastModifiedBy\": \"\",\r\n                \"LastModifiedDate\": \"\",\r\n                \"ListPrice\": \"\",\r\n                \"Make\": \"\",\r\n                \"MeasurementType\": \"\",\r\n                \"MeasurementType2\": \"\",\r\n                \"Model\": \"\",\r\n                \"PLU\": \"\",\r\n                \"PtProductTypeID\": \"\",\r\n                \"SKU\": \"\",\r\n                \"SalePrice\": \"\",\r\n                \"SmallImage\": \"\",\r\n                \"StartDate\": \"\",\r\n                \"UnitName\": \"\",\r\n                \"UnitName2\": \"\",\r\n                \"UnitQty\": \"\",\r\n                \"WebPrice\": \"\",\r\n                \"empReplacementPrice\": \"\",\r\n                \"packageQty\": \"\",\r\n                \"packageSize\": \"\",\r\n                \"sCreationDate\": \"\",\r\n                \"sDeleteDate\": \"\",\r\n                \"sEndDate\": \"\",\r\n                \"sLastModifiedDate\": \"\",\r\n                \"sStartDate\": \"\"\r\n              }\r\n            ],\r\n            \"instructionTypeID\": \"\",\r\n            \"itemId\": \"\",\r\n            \"lastModifiedBy\": \"\",\r\n            \"lastModifiedDate\": \"\",\r\n            \"qty\": \"\",\r\n            \"replacedItemId\": \"\",\r\n            \"replacedQty\": \"\",\r\n            \"sCreationDate\": \"\",\r\n            \"sDeleteDate\": \"\",\r\n            \"sLastModifiedDate\": \"\",\r\n            \"tilQty\": \"\",\r\n            \"total\": \"\",\r\n            \"transLineId\": \"\",\r\n            \"transNumber\": \"\"\r\n          }\r\n        ],\r\n        \"TransItemLinePayeeList\": [\r\n          {\r\n            \"AccountCode\": \"\",\r\n            \"AccountNumber\": \"\",\r\n            \"CreationDate\": \"\",\r\n            \"DeleteDate\": \"\",\r\n            \"InvoiceNumber\": \"\",\r\n            \"ItemPayeeID\": \"\",\r\n            \"LastModifiedBy\": \"\",\r\n            \"LastModifiedDate\": \"\",\r\n            \"MinPayment\": \"\",\r\n            \"Name\": \"\",\r\n            \"NewBalance\": \"\",\r\n            \"OldBalance\": \"\",\r\n            \"Payee\": \"\",\r\n            \"PayeeAccountTypeID\": \"\",\r\n            \"TransItemLinePayeeID\": \"\",\r\n            \"TransLineID\": \"\",\r\n            \"TransNumber\": \"\",\r\n            \"sCreationDate\": \"\",\r\n            \"sDeleteDate\": \"\",\r\n            \"sLastModifiedDate\": \"\"\r\n          }\r\n        ],\r\n        \"TransItemLinePreparationList\": [\r\n          {\r\n            \"creationDate\": \"\",\r\n            \"deleteDate\": \"\",\r\n            \"finishedQty\": \"\",\r\n            \"inProcessQty\": \"\",\r\n            \"lastModifiedBy\": \"\",\r\n            \"lastModifiedDate\": \"\",\r\n            \"objectId\": \"\",\r\n            \"sCreationDate\": \"\",\r\n            \"sDeleteDate\": \"\",\r\n            \"sLastModifiedDate\": \"\",\r\n            \"transLineId\": \"\",\r\n            \"transNumber\": \"\"\r\n          }\r\n        ],\r\n        \"TransItemLineTaxList\": [\r\n          {\r\n            \"CreationDate\": \"\",\r\n            \"DeleteDate\": \"\",\r\n            \"ExemptFlag\": \"\",\r\n            \"ItemID\": \"\",\r\n            \"LastModifiedBy\": \"\",\r\n            \"LastModifiedDate\": \"\",\r\n            \"TaxAmount\": \"\",\r\n            \"TaxID\": \"\",\r\n            \"TaxName\": \"\",\r\n            \"TaxRate\": \"\",\r\n            \"TaxableAmount\": \"\",\r\n            \"TransLineID\": \"\",\r\n            \"TransNumber\": \"\",\r\n            \"sCreationDate\": \"\",\r\n            \"sDeleteDate\": \"\",\r\n            \"sLastModifiedDate\": \"\"\r\n          }\r\n        ],\r\n        \"TransItemLineVariationList\": [\r\n          {\r\n            \"creationDate\": \"\",\r\n            \"deleteDate\": \"\",\r\n            \"lastModifiedBy\": \"\",\r\n            \"lastModifiedDate\": \"\",\r\n            \"sCreationDate\": \"\",\r\n            \"sDeleteDate\": \"\",\r\n            \"sLastModifiedDate\": \"\",\r\n            \"transItemLineVariationId\": \"\",\r\n            \"transLineId\": \"\",\r\n            \"transNumber\": \"\",\r\n            \"variationCode\": \"\"\r\n          }\r\n        ],\r\n        \"TransItemLineWarrantyList\": [\r\n          {\r\n            \"AltTerm\": \"\",\r\n            \"AltWarrantyPeriodID\": \"\",\r\n            \"CreationDate\": \"\",\r\n            \"DeleteDate\": \"\",\r\n            \"ItemWarrantyID\": \"\",\r\n            \"LastModifiedBy\": \"\",\r\n            \"LastModifiedDate\": \"\",\r\n            \"Term\": \"\",\r\n            \"TransItemLineWarrantyID\": \"\",\r\n            \"TransLineID\": \"\",\r\n            \"TransNumber\": \"\",\r\n            \"WarrantyCoverageID\": \"\",\r\n            \"WarrantyInfo\": \"\",\r\n            \"WarrantyPeriodID\": \"\",\r\n            \"WarrantyType\": \"\",\r\n            \"linkedItemName\": \"\",\r\n            \"linkedItemSerialNumber\": \"\",\r\n            \"linkedItemSku\": \"\",\r\n            \"sAltWarrantyPeriod\": \"\",\r\n            \"sCreationDate\": \"\",\r\n            \"sDeleteDate\": \"\",\r\n            \"sLastModifiedDate\": \"\",\r\n            \"sWarrantyCoverage\": \"\",\r\n            \"sWarrantyPeriod\": \"\"\r\n          }\r\n        ],\r\n        \"TransLineID\": \"\",\r\n        \"TransNumber\": \"\",\r\n        \"sCreationDate\": \"\",\r\n        \"sDeleteDate\": \"\",\r\n        \"sLastModifiedDate\": \"\"\r\n      }\r\n    ],\r\n    \"TransItemLoyaltyList\": [\r\n      {\r\n        \"countsTowardRevenue\": \"\",\r\n        \"creationDate\": \"\",\r\n        \"deleteDate\": \"\",\r\n        \"itemId\": \"\",\r\n        \"lastModifiedBy\": \"\",\r\n        \"lastModifiedDate\": \"\",\r\n        \"pointAccumRule\": \"\",\r\n        \"pointsEarned\": \"\",\r\n        \"pointsRedeemed\": \"\",\r\n        \"pointsRefunded\": \"\",\r\n        \"sCreationDate\": \"\",\r\n        \"sDeleteDate\": \"\",\r\n        \"sLastModifiedDate\": \"\",\r\n        \"sku\": \"\",\r\n        \"transNumber\": \"\"\r\n      }\r\n    ],\r\n    \"TransNumber\": \"\",\r\n    \"TransTaxExemptionList\": [\r\n      {\r\n        \"CertificateNumber\": \"\",\r\n        \"CertificateOwnerName\": \"\",\r\n        \"CreationDate\": \"\",\r\n        \"DeleteDate\": \"\",\r\n        \"ExemptLineID\": \"\",\r\n        \"ExemptionAmout\": \"\",\r\n        \"LastModifiedBy\": \"\",\r\n        \"LastModifiedDate\": \"\",\r\n        \"ReasonCode\": \"\",\r\n        \"TaxID\": \"\",\r\n        \"TransNumber\": \"\",\r\n        \"sCreationDate\": \"\",\r\n        \"sDeleteDate\": \"\",\r\n        \"sLastModifiedDate\": \"\"\r\n      }\r\n    ],\r\n    \"TransTenderList\": [\r\n      {\r\n        \"AuthCode\": \"\",\r\n        \"BalancingEventID\": \"\",\r\n        \"BalancingEventTypeID\": \"\",\r\n        \"BankDateTime\": \"\",\r\n        \"BatchNumber\": \"\",\r\n        \"CardLocale\": \"\",\r\n        \"CardNumber\": \"\",\r\n        \"CardType\": \"\",\r\n        \"CreationDate\": \"\",\r\n        \"CurAmount\": \"\",\r\n        \"CurRate\": \"\",\r\n        \"CurrencyID\": \"\",\r\n        \"DeleteDate\": \"\",\r\n        \"ExpiryDate\": \"\",\r\n        \"Gratuity\": \"\",\r\n        \"GratuityRefNumber\": \"\",\r\n        \"KeyUsed\": \"\",\r\n        \"LastModifiedBy\": \"\",\r\n        \"LastModifiedDate\": \"\",\r\n        \"NameOnCard\": \"\",\r\n        \"PinPadID\": \"\",\r\n        \"ProcessedType\": \"\",\r\n        \"RefNumber\": \"\",\r\n        \"RefType\": \"\",\r\n        \"ResponseCode\": \"\",\r\n        \"SettlementDate\": \"\",\r\n        \"TenderAmount\": \"\",\r\n        \"TenderChange\": \"\",\r\n        \"TenderID\": \"\",\r\n        \"TenderLineID\": \"\",\r\n        \"TenderName\": \"\",\r\n        \"TransNumber\": \"\",\r\n        \"Var0Value\": \"\",\r\n        \"Var1Value\": \"\",\r\n        \"Var2Value\": \"\",\r\n        \"Var3Value\": \"\",\r\n        \"Var4Value\": \"\",\r\n        \"sCreationDate\": \"\",\r\n        \"sDeleteDate\": \"\",\r\n        \"sLastModifiedDate\": \"\",\r\n        \"sSettlementDate\": \"\"\r\n      }\r\n    ],\r\n    \"TransactionDiscountList\": [\r\n      {\r\n        \"BaseValue\": \"\",\r\n        \"BeforeTax\": \"\",\r\n        \"CreationDate\": \"\",\r\n        \"DeleteDate\": \"\",\r\n        \"DiscountCode\": \"\",\r\n        \"DiscountDesc\": \"\",\r\n        \"DiscountLineID\": \"\",\r\n        \"DiscountedAmount\": \"\",\r\n        \"DiscountedValue\": \"\",\r\n        \"LastModifiedBy\": \"\",\r\n        \"LastModifiedDate\": \"\",\r\n        \"MaterialID\": \"\",\r\n        \"Percentage\": \"\",\r\n        \"SequenceID\": \"\",\r\n        \"TransNumber\": \"\",\r\n        \"TypeID\": \"\",\r\n        \"sCreationDate\": \"\",\r\n        \"sDeleteDate\": \"\",\r\n        \"sLastModifiedDate\": \"\"\r\n      }\r\n    ],\r\n    \"TransactionTaxList\": [\r\n      {\r\n        \"CreationDate\": \"\",\r\n        \"DeleteDate\": \"\",\r\n        \"ExemptFlag\": \"\",\r\n        \"LastModifiedBy\": \"\",\r\n        \"LastModifiedDate\": \"\",\r\n        \"TaxAmount\": \"\",\r\n        \"TaxID\": \"\",\r\n        \"TaxName\": \"\",\r\n        \"TaxRate\": \"\",\r\n        \"TaxableAmount\": \"\",\r\n        \"TransNumner\": \"\",\r\n        \"TransTaxLineID\": \"\",\r\n        \"sCreationDate\": \"\",\r\n        \"sDeleteDate\": \"\",\r\n        \"sLastModifiedDate\": \"\"\r\n      }\r\n    ],\r\n    \"TypeID\": \"\",\r\n    \"VipNumber\": \"\",\r\n    \"sBusinessDate\": \"\",\r\n    \"sCreationDate\": \"\",\r\n    \"sDeleteDate\": \"\",\r\n    \"sEndDatetime\": \"\",\r\n    \"sLastModifiedDate\": \"\",\r\n    \"sPostingDatetime\": \"\",\r\n    \"sStartDatetime\": \"\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/SASKTEL_processTransaction",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"SASKTEL_processTransaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateRestaurantTransactions",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"restaurantTransactions\": [\r\n    {\r\n      \"arrivalTime\": \"\",\r\n      \"completionTime\": \"\",\r\n      \"creationDate\": \"\",\r\n      \"customerName\": \"\",\r\n      \"deleteDate\": \"\",\r\n      \"gratuity\": \"\",\r\n      \"gratuityPaymentType\": \"\",\r\n      \"lastModifiedBy\": \"\",\r\n      \"lastModifiedDate\": \"\",\r\n      \"mealCompletionTime\": \"\",\r\n      \"mealStartTime\": \"\",\r\n      \"numberItem\": \"\",\r\n      \"numberOfGuest\": \"\",\r\n      \"orderNumber\": \"\",\r\n      \"reservationId\": \"\",\r\n      \"sArrivalTime\": \"\",\r\n      \"sCompletionTime\": \"\",\r\n      \"sCreationDate\": \"\",\r\n      \"sDeleteDate\": \"\",\r\n      \"sLastModifiedDate\": \"\",\r\n      \"sMealCompletionTime\": \"\",\r\n      \"sMealStartTime\": \"\",\r\n      \"sSeatingTime\": \"\",\r\n      \"sTenderTime\": \"\",\r\n      \"seatingTime\": \"\",\r\n      \"serviceCharge\": \"\",\r\n      \"status\": \"\",\r\n      \"tableNumber\": \"\",\r\n      \"taxableAmt\": \"\",\r\n      \"tenderTime\": \"\",\r\n      \"transNumber\": \"\",\r\n      \"type\": \"\"\r\n    }\r\n  ]\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/updateRestaurantTransactions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"updateRestaurantTransactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getRecentTransList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"customerID\": \"\",\r\n  \"customerNumber\": \"\",\r\n  \"firstName\": \"\",\r\n  \"lastName\": \"\",\r\n  \"numOfTrans\": \"\",\r\n  \"transactionNumber\": \"\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/retail-it-ws/webapi/enterprise/getRecentTransList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retail-it-ws",
+						"webapi",
+						"enterprise",
+						"getRecentTransList"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
